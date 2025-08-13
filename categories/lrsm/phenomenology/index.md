@@ -1,0 +1,18 @@
+---
+layout: post
+title: LRSM Phenomenology
+date: 2025-08-13 12:00:00 +0900
+categories: lrsm phenomenology
+tags: [LRSM, physics, phenomenology]
+permalink: /categories/lrsm/phenomenology/
+---
+
+# LRSM Phenomenology
+
+Left-Right Symmetric Model의 현상론과 관련된 포스트들입니다.
+
+## 주요 내용
+- Collider Physics에서의 LRSM 신호
+- Heavy neutrino와 lepton number violation
+- W_R boson 및 Z' boson 탐지 전략
+- Flavor physics에서의 LRSM 효과

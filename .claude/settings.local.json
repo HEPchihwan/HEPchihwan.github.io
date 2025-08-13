@@ -10,7 +10,21 @@
       "Bash(git config:*)",
       "Bash(git push:*)",
       "Bash(git add:*)",
-      "Bash(gh repo view:*)"
+      "Bash(gh repo view:*)",
+      "Bash(ruby --version)",
+      "Bash(winget install:*)",
+      "Bash(./ruby-installer.exe /S)",
+      "Bash(pacman:*)",
+      "Bash(source ~/.bashrc)",
+      "Bash(export:*)",
+      "Bash(cmd.exe /c \"ruby --version\")",
+      "Bash(where ruby)",
+      "Bash(powershell.exe:*)",
+      "Bash(gem install:*)",
+      "WebFetch(domain:jekyllrb.com)",
+      "WebFetch(domain:jeffreytse.github.io)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []
