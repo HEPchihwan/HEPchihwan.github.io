@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: post
 title: Experiments Practice
+date: 2025-08-13 12:07:00 +0900
 categories: practice experiments
 permalink: /categories/practice/experiments/
 heading: "Experiments Practice"

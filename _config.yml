@@ -36,6 +36,9 @@ banner:
   subtitle: "HEP Physics Research & Development"
   image: "/img/KakaoTalk_20250813_191149495.jpg"
   
+# Exclude categories from main listing
+exclude_categories: [blog]
+  
 yat:
   home:
     sidebar:

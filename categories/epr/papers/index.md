@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: post
 title: EPR Papers
+date: 2025-08-13 12:05:00 +0900
 categories: epr papers
 permalink: /categories/epr/papers/
 heading: "EPR Papers"

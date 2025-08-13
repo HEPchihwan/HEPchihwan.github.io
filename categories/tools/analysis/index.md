@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: post
 title: Analysis Tools
+date: 2025-08-13 12:03:00 +0900
 categories: tools analysis
 permalink: /categories/tools/analysis/
 heading: "Analysis Tools"

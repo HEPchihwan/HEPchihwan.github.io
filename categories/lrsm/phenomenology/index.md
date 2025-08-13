@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: post
 title: LRSM Phenomenology
+date: 2025-08-13 12:01:00 +0900
 categories: lrsm phenomenology
 permalink: /categories/lrsm/phenomenology/
 heading: "LRSM Phenomenology"

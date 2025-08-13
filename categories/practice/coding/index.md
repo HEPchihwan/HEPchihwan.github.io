@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: post
 title: Coding Practice
+date: 2025-08-13 12:06:00 +0900
 categories: practice coding
 permalink: /categories/practice/coding/
 heading: "Coding Practice"

@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: post
 title: Programming Tools
+date: 2025-08-13 12:02:00 +0900
 categories: tools programming
 permalink: /categories/tools/programming/
 heading: "Programming Tools"

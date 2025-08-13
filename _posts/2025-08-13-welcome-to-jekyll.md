@@ -4,6 +4,7 @@ title: "Jekyll 블로그를 시작합니다"
 date: 2025-08-13 12:00:00 +0900
 categories: blog
 tags: [jekyll, github-pages, hep]
+published: false
 ---
 
 # Jekyll 블로그 시작

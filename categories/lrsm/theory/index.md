@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: post
 title: LRSM Theory
+date: 2025-08-13 12:00:00 +0900
 categories: lrsm theory
 permalink: /categories/lrsm/theory/
 heading: "LRSM Theory"
