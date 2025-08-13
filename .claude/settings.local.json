@@ -25,7 +25,10 @@
       "WebFetch(domain:jeffreytse.github.io)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "Bash(rm:*)",
-      "Bash(gh workflow:*)"
+      "Bash(gh workflow:*)",
+      "WebFetch(domain:hepchihwan.github.io)",
+      "Bash(bundle exec jekyll:*)",
+      "Bash(bundle show:*)"
     ],
     "deny": [],
     "ask": []
