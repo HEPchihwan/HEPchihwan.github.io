@@ -3,15 +3,17 @@ description: HEP Physics Research & Development Blog
 url: "https://hepchihwan.github.io"
 baseurl: ""
 
+remote_theme: "jeffreytse/jekyll-theme-yat"
+
 author:
   name: Chi Hwan
   email: your-email@example.com
 
 markdown: kramdown
 highlighter: rouge
-theme: minima
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
