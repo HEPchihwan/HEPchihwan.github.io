@@ -1,10 +1,8 @@
 ---
 layout: home
 title: Home
-banner:
-  title: "Chi Hwan's Blog"
-  subtitle: "HEP Physics Research & Development"
-  image: "/img/KakaoTalk_20250813_191149495.jpg"
+heading: "Chi Hwan's Blog"
+subheading: "HEP Physics Research & Development"
 ---
 
 # Chi Hwan's Blog
