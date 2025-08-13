@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: EPR
 permalink: /categories/epr/
 heading: "EPR"

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: LRSM
 permalink: /categories/lrsm/
 heading: "LRSM"

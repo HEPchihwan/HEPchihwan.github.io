@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: Tools
 permalink: /categories/tools/
 heading: "Tools"

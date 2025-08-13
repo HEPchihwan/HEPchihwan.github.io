@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: Practice
 permalink: /categories/practice/
 heading: "Practice"
