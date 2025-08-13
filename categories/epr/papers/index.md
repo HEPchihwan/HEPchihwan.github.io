@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: home
 title: EPR Papers
-date: 2025-08-13 12:00:00 +0900
 categories: epr papers
-tags: [EPR, papers, review]
 permalink: /categories/epr/papers/
+heading: "EPR Papers"
+subheading: "Literature Review"
 ---
 
 # EPR Papers

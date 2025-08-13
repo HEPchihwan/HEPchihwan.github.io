@@ -2,6 +2,8 @@
 layout: home
 title: Practice
 permalink: /categories/practice/
+heading: "Practice"
+subheading: "Hands-on Experience"
 ---
 
 # Practice

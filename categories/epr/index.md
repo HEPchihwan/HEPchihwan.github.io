@@ -2,6 +2,8 @@
 layout: home
 title: EPR
 permalink: /categories/epr/
+heading: "EPR"
+subheading: "Einstein-Podolsky-Rosen"
 ---
 
 # EPR

@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: home
 title: LRSM Phenomenology
-date: 2025-08-13 12:00:00 +0900
 categories: lrsm phenomenology
-tags: [LRSM, physics, phenomenology]
 permalink: /categories/lrsm/phenomenology/
+heading: "LRSM Phenomenology"
+subheading: "Experimental Signatures"
 ---
 
 # LRSM Phenomenology

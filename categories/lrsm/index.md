@@ -2,6 +2,8 @@
 layout: home
 title: LRSM
 permalink: /categories/lrsm/
+heading: "LRSM"
+subheading: "Left-Right Symmetric Model"
 ---
 
 # Left-Right Symmetric Model (LRSM)

@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: home
 title: EPR Research
-date: 2025-08-13 12:00:00 +0900
 categories: epr research
-tags: [EPR, quantum, research]
 permalink: /categories/epr/research/
+heading: "EPR Research"
+subheading: "Quantum Mechanics Studies"
 ---
 
 # EPR Research

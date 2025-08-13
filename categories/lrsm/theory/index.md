@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: home
 title: LRSM Theory
-date: 2025-08-13 12:00:00 +0900
 categories: lrsm theory
-tags: [LRSM, physics, theory]
 permalink: /categories/lrsm/theory/
+heading: "LRSM Theory"
+subheading: "Theoretical Foundations"
 ---
 
 # LRSM Theory

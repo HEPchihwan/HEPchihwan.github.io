@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: home
 title: Experiments Practice
-date: 2025-08-13 12:00:00 +0900
 categories: practice experiments
-tags: [practice, experiments, physics]
 permalink: /categories/practice/experiments/
+heading: "Experiments Practice"
+subheading: "Laboratory Skills"
 ---
 
 # Experiments Practice

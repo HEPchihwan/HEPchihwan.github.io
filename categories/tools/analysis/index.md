@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: home
 title: Analysis Tools
-date: 2025-08-13 12:00:00 +0900
 categories: tools analysis
-tags: [tools, analysis, data]
 permalink: /categories/tools/analysis/
+heading: "Analysis Tools"
+subheading: "Data Analysis & Visualization"
 ---
 
 # Analysis Tools

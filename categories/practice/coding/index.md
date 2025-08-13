@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: home
 title: Coding Practice
-date: 2025-08-13 12:00:00 +0900
 categories: practice coding
-tags: [practice, coding, algorithms]
 permalink: /categories/practice/coding/
+heading: "Coding Practice"
+subheading: "Programming Skills"
 ---
 
 # Coding Practice

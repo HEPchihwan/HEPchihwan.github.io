@@ -2,6 +2,8 @@
 layout: home
 title: Tools
 permalink: /categories/tools/
+heading: "Tools"
+subheading: "Development & Analysis Tools"
 ---
 
 # Tools
