@@ -14,19 +14,31 @@ permalink: /about/
 ## 연구 분야
 
 ### 주요 관심사
-- **High Energy Physics**: 입자물리학 실험 및 이론 연구
-- **Left-Right Symmetric Model**: LRSM 현상론 및 이론 연구  
-- **EPR & Quantum Mechanics**: 양자역학의 기초 원리 연구
-- **Data Analysis & Machine Learning**: 물리학 데이터 분석 및 ML 응용
+- **High Energy Physics**: CMS 실험에서 입자물리학 연구
+- **Trigger Systems**: Tau lepton trigger 성능 연구 및 최적화
+- **Left-Right Symmetric Model**: LRSM heavy neutrino 탐색
+- **EPR Task**: CMS tau trigger performance evaluation 
+- **Data Analysis & Machine Learning**: ROOT, Python을 이용한 데이터 분석
 
 ### 기술 스택
 - **Programming**: Python, C++, ROOT, Mathematica
 - **Data Analysis**: Pandas, NumPy, Matplotlib, ROOT
 - **Tools**: Git, Docker, Jupyter, LaTeX
 
-## 연구 철학
+## 현재 연구 프로젝트
 
-물리학의 근본적인 질문들을 탐구하며, 이론과 실험을 통해 자연의 깊은 원리를 이해하고자 합니다. 특히 입자물리학에서 대칭성의 역할과 양자역학의 해석에 관심이 많습니다.
+### EPR Task - Tau Trigger Performance
+CMS 실험에서 Run3 환경의 tau lepton trigger 시스템 성능을 연구하고 있습니다:
+- L1 trigger와 HLT tau path 효율성 분석
+- Tag-and-Probe 방법을 이용한 정확한 효율성 측정  
+- Machine learning을 활용한 trigger 알고리즘 개선
+- Rate vs efficiency 최적화
+
+### LRSM Heavy Neutrino Search  
+Left-Right Symmetric Model에서 예측하는 무거운 뉴트리노 탐색:
+- W_R → eN, μN decay channel 분석
+- Same-sign dilepton + jets final state
+- Background estimation과 systematic uncertainty
 
 ## 연락처
 

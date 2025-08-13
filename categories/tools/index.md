@@ -11,5 +11,8 @@ subheading: "Development & Analysis Tools"
 개발 도구와 분석 툴에 관한 포스트들입니다.
 
 ## 서브카테고리
-- [Programming](/categories/tools/programming/) - 프로그래밍 도구
-- [Analysis](/categories/tools/analysis/) - 데이터 분석 도구
+- [FEWZ](/categories/tools/FEWZ/) - W,Z production
+- [Genproductions](/categories/tools/Genproductions/) - gridpack generate 
+- [SKNANO](/categories/tools/SKNANO/) - Analysis tool
+- [SampleFactory](/categories/tools/SampleFactory/) - Sample production 
+- [HiggsCombineTool](/categories/tools/HiggsCombineTool/) - Statistical analysis

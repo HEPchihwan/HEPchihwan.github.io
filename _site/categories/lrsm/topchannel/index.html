@@ -1,0 +1,2006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Top Channel | Chi Hwan’s Blog</title>
+<meta name="generator" content="Jekyll v4.4.1">
+<meta property="og:title" content="Top Channel">
+<meta name="author" content="Chi Hwan">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="HEP Physics Research &amp; Development Blog">
+<meta property="og:description" content="HEP Physics Research &amp; Development Blog">
+<link rel="canonical" href="http://localhost:4000/categories/lrsm/topchannel/">
+<meta property="og:url" content="http://localhost:4000/categories/lrsm/topchannel/">
+<meta property="og:site_name" content="Chi Hwan’s Blog">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-08-13T13:10:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Top Channel">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Chi Hwan"},"dateModified":"2025-08-13T13:10:00+09:00","datePublished":"2025-08-13T13:10:00+09:00","description":"HEP Physics Research &amp; Development Blog","headline":"Top Channel","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/lrsm/topchannel/"},"url":"http://localhost:4000/categories/lrsm/topchannel/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="canonical" href="http://localhost:4000">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Chi Hwan's Blog">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="Chi Hwan's Blog" src="" onerror="this.style.display='none'">
+  Chi Hwan's Blog
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/categories/lrsm/">LRSM</a><a class="page-link" href="/categories/tools/">TOOLS</a><a class="page-link" href="/categories/epr/">EPR</a><a class="page-link" href="/categories/practice/">PRACTICE</a><a class="page-link" href="/about/">ABOUT</a>
+
+
+
+
+
+
+
+
+
+<div class="page-link" style="display: inline;">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<div class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="fr">
+          
+          <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ko">
+          
+          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ru">
+          
+          <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+          
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+</div>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: url(/img/KakaoTalk_20250813_191149495.jpg)"></div>
+        <img class="img-placeholder" src="/img/KakaoTalk_20250813_191149495.jpg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner">
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Top Channel</h1>
+  <h2 class="post-subtitle">LRSM Top Channel Analysis</h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2025-08-13T13:10:00+09:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Aug 13, 2025
+    </time>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 23 mins</span>
+  </div></header>
+</div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+        document.dispatchEvent(new Event('theme-changed'));
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <h1 id="lrsm-wrtb-channel-analysis">LRSM WR→tb Channel Analysis</h1>
+
+<p><strong>Decay channel</strong>: WR→e/μ + N→e/μ + WR*→tb</p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195203.png" alt="Pasted image 20250729195203.png"></p>
+
+<h2 id="1-introduction">1. Introduction</h2>
+
+<h3 id="11-motivation-and-channel-selection">1.1 Motivation and Channel Selection</h3>
+
+<p>Previous research focused on the <strong>WR high, N low</strong> region where N particles are highly boosted, causing jets to cluster together. The primary decay modes studied were WR*→ud, sc channels, which produce at most 3 substructures (q, q, τ) within a single AK8 jet.</p>
+
+<p>In this channel, due to using 2 lepton and top tagging and b tagging also with high m_ll, we can reduce lot of backgrounds and also improvements in WR ~ N region in the previous study.</p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195448.png" alt="Pasted image 20250729195448.png"></p>
+
+<p><strong>Previous study data (EXO-20-002)</strong></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195530.png" alt="Pasted image 20250729195530.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195551.png" alt="Pasted image 20250729195551.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195609.png" alt="Pasted image 20250729195609.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195621.png" alt="Pasted image 20250729195621.png"></p>
+
+<h3 id="12-challenge-with-tb-channel">1.2 Challenge with tb Channel</h3>
+
+<p>Extending the analysis to include the <strong>tb decay channel</strong> presents kinematic challenges:</p>
+
+<ul>
+  <li>
+<strong>Top quark rapid decay</strong>: t → b + W, where W further decays to either:
+    <ul>
+      <li>Hadronic: qq̄ (~70% BR)</li>
+      <li>Leptonic: l_nu (~30% BR)</li>
+    </ul>
+  </li>
+  <li>
+<strong>Boosted regime complexity</strong>: In the WR » N mass regime, all decay products (3 jets from top, b quark, lepton) become highly boosted, creating 5 substructures within a single cone - making reconstruction difficult.</li>
+</ul>
+
+<h3 id="13-proposed-solution-wr--n-mass-region">1.3 Proposed Solution: WR ~ N Mass Region</h3>
+
+<p><strong>Strategy</strong>: Target the <strong>WR ~ N</strong> mass region where:</p>
+
+<ol>
+  <li>
+<strong>N becomes resolved</strong>: Lepton and off-shell WR* separate</li>
+  <li>
+<strong>Similar kinematics</strong>: Off-shell WR* has similar mass to N, leading to comparable momentum</li>
+  <li>
+<strong>Separable final states</strong>: When WR* → tb, the top and bottom quarks can be distinguished using AK4 jets</li>
+  <li>
+<strong>T,B-tagging capability</strong>: b quarks (from and WR* decay) can be identified using b-tagging, and top quark can be Top tagged</li>
+</ol>
+
+<h3 id="14analysis-variables-and-cuts">1.4Analysis Variables and Cuts</h3>
+
+<p><strong>Key invariant masses</strong>:</p>
+<ul>
+  <li>M_{lltb}: Full system invariant mass</li>
+  <li>M_{ll}: Dilepton invariant mass (peaks at ~90 GeV for Z resonance)</li>
+</ul>
+
+<p><strong>Selection considerations</strong>:</p>
+<ul>
+  <li>Fat jet pT cut at 200 GeV may handle lepton selection</li>
+  <li>In boosted regimes, leptons correlate with jet boost → additional lepton cuts may be needed</li>
+  <li>M_ll particularly useful for boosted leptons due to Z peak structure</li>
+  <li>More study needed</li>
+</ul>
+
+<h3 id="15-top-decay-complications-in-lrsm">1.5 Top Decay Complications in LRSM</h3>
+
+<p><strong>Chirality constraints</strong>: Since q_T originates from W_R* with right-handed chirality, all subsequent decay products maintain right-handed chirality. This leads to t → W_R b_R instead of the SM decay t → W_L b.</p>
+
+<p><strong>Key challenges</strong>:</p>
+
+<ol>
+  <li>
+<strong>Non-SM decay mode</strong>: Need to account for W_R b_R decay channel separately</li>
+  <li>
+<strong>Off-shell WR suppression</strong>: Since W_R decays off-shell near top mass, cross-section significantly reduced for massive W_R. Leptonic channels become negligible.</li>
+  <li>
+<strong>Chirality flip probability</strong>: For WL production, chirality flip required with probability ~ m_T/E_T
+    <ul>
+      <li>Example: 3 TeV WR → t(1.5 TeV) + b(1.5 TeV) → &lt;10% flip probability</li>
+      <li>Results in SM-like W boson production</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Mass regime dependencies</strong>:</p>
+
+<ul>
+  <li>
+<strong>Low WR (top-resolved)</strong>: Both WL and WR decay modes possible with finite probabilities</li>
+  <li>
+<strong>High WR (top-boosted)</strong>: Predominantly WR decay, difficult to observe due to off-shell nature</li>
+</ul>
+
+<p><strong>Alternative approach</strong>: In high WR, low N region, if initial WR is off-shell, reduced top boost enables WL decay mode.</p>
+
+<p><img src="/img/DB/%EC%9D%B4%EB%AF%B8%EC%A7%80%202025.%206.%204.%20%EC%98%A4%ED%9B%84%201.34.jpeg" alt="이미지 2025. 6. 4. 오후 1.34.jpeg"></p>
+
+<p><strong>MadGraph simulation setup</strong>:</p>
+<ul>
+  <li>Top couples to both WR and WL: t → (WR + WL)b vs t → WL b</li>
+  <li>Off-shell WR → qq: t → (qq)b process</li>
+  <li>Comparative study: (WL + WR) vs (WL) only</li>
+  <li>Investigation of automatic chirality flip handling in LRSM</li>
+</ul>
+
+<p><strong>Results</strong>:</p>
+<ul>
+  <li>Combined (WL + WR) shows ~1% higher cross-section than WL only</li>
+  <li>
+<strong>Conclusion</strong>: WL production dominates across most parameter space (off-shell WR production less favorable than chirality flip)</li>
+  <li>Including tb channel increases cross-section by ~10% compared to standard approach</li>
+</ul>
+
+<p><strong>Decay width comparison</strong> (3 TeV WR):</p>
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">generate t &gt; q q b / w+</code>: Width = 1.1 × 10^{-8} ± 1.4 × 10^{-11} GeV</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">generate t &gt; q q b / wr+</code>: Width = 0.97 ± 0.0007 GeV</li>
+  <li>
+<strong>Result</strong>: WR decay channel negligible at high masses</li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195330.png" alt="Pasted image 20250729195330.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195347.png" alt="Pasted image 20250729195347.png"></p>
+
+<p>Checked with WL + WR both decay mode and the case with decays with only SM W. There was no significance pattern when does WR contributes to cross section.</p>
+
+<p>Yellow region means when WL + WR decays it has more cross section and it was order of less than 5% in LO. Also black region is when WL + WR makes less cross section and DONT KNOW WHY yet why this happens, also in LO.</p>
+
+<h3 id="16-cross-section-studies">1.6 Cross-Section Studies</h3>
+
+<p>Cross section is checked with LO gridpacks.</p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195642.png" alt="Pasted image 20250729195642.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195654.png" alt="Pasted image 20250729195654.png"></p>
+
+<ul>
+  <li>Cross section can be differ 3 order 
+Cross sections for exo 20-002</li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195711.png" alt="Pasted image 20250729195711.png"></p>
+
+<p>Cross section when N is ~ WR/2 has the most cross section, because N = 200 it is constraint due to top mass, and also N ~ WR has no much kinematic phase space to decay.</p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195728.png" alt="Pasted image 20250729195728.png"></p>
+
+<p>Full cross section</p>
+
+<p>-&gt; Detailed cross section has to be checked in madgraph card setting and for kinematics , madspin would be used. For details in card setting , does channel for e/mu creation should open other lepton flavor and just using one flavor or closing other flavor and using one flavor , which one is right is not figured out yet . 
+Also needs NLO , to get K factors .</p>
+
+<ul>
+  <li>Leptonic decay for WR* 
+First checked tb  top to (wl b) , WL to leptonic channel , which has ratio of 10 less than hadronic channel .  so ud sc has more than ratio of 10 with single lepton channel .</li>
+</ul>
+
+<p>SM has</p>
+
+<hr>
+
+<h2 id="2-signal-analysis">2. Signal Analysis</h2>
+
+<h3 id="21-kinematics-and-event-topology">2.1 Kinematics and Event Topology</h3>
+
+<p><strong>Analysis approach</strong>: Event kinematics studied using LHE files (parton level) to understand ΔR and pT distributions.</p>
+
+<p><strong>Boost Factors for non observable objects (WR, top)</strong></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195917.png" alt="Pasted image 20250729195917.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195928.png" alt="Pasted image 20250729195928.png"></p>
+
+<p><strong>Delta R, Delta eta, Delta phi for each variables</strong></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195958.png" alt="Pasted image 20250729195958.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200010.png" alt="Pasted image 20250729200010.png"></p>
+
+<h4 id="211-wr--n-mass-region-5000-4900-gev">2.1.1 WR ~ N Mass Region (5000, 4900 GeV)</h4>
+
+<p><strong>Key observations</strong>:</p>
+<ul>
+  <li>
+<strong>WR* rest frame</strong>: t and b quarks produced back-to-back (ΔR between bottom quarks ~3)</li>
+  <li>
+<strong>Limited boost</strong>: Since WR* not highly boosted, tb quarks separate significantly</li>
+  <li>
+<strong>Lepton correlations</strong>:
+    <ul>
+      <li>l1 (from WR): Can appear in all directions</li>
+      <li>l2 (from N): Back-to-back with WR* in N rest frame</li>
+      <li>
+<strong>Unexpected behavior</strong>: Top quark less boosted than expected, follows WR* direction</li>
+      <li>
+<strong>Bottom quark</strong>: Highly boosted, random direction relative to l2</li>
+      <li>
+<strong>Interpretation</strong>: Suggests moderate WR* boost regime</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195809.png" alt="Pasted image 20250729195809.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729195825.png" alt="Pasted image 20250729195825.png"></p>
+
+<h4 id="212-wr--n2-mass-region-5000-2500-gev">2.1.2 WR ~ N/2 Mass Region (5000, 2500 GeV)</h4>
+
+<p><strong>Distinct topology observed</strong>:</p>
+<ul>
+  <li>
+<strong>Initial state</strong>: N and l1 produced back-to-back, with N significantly boosted</li>
+  <li>
+<strong>N decay dynamics</strong>:
+    <ul>
+      <li>l2 partially opposes N boost → moderate displacement from WR* direction</li>
+      <li>Some l2 events still follow WR* direction due to boost competition</li>
+    </ul>
+  </li>
+  <li>
+<strong>WR* behavior</strong>: Inherits N direction due to boost inheritance</li>
+  <li>
+<strong>Final state tb decay</strong>:
+    <ul>
+      <li>
+<strong>b quark</strong>: Receives strong additional boost → significant separation from top jet</li>
+      <li>
+<strong>Top jet</strong>: Moderately boosted (reduced WR* mass) → partially follows N direction</li>
+      <li>
+<strong>Angular correlation</strong>: b quark direction depends on decay orientation:
+        <ul>
+          <li>Opposite WR* direction → back-to-back with system</li>
+          <li>Same WR* direction → collinear with top jet</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="22-ak8-top-jet-analysis">2.2 AK8 Top Jet Analysis</h3>
+
+<p><strong>Primary objective</strong>: Identify and characterize signal AK8 jets while understanding potential backgrounds and misidentification sources.</p>
+
+<p><strong>Analysis strategy</strong>:</p>
+<ol>
+  <li>
+<strong>Signal jet identification</strong>: Match closest AK8 jet to generator-level top quark</li>
+  <li>
+<strong>Background characterization</strong>: Study distance distributions and top scores for nearby AK8 jets</li>
+  <li>
+<strong>Selection validation</strong>: Test discriminating power of top tagger and soft-drop mass cuts</li>
+  <li>
+<strong>Efficiency assessment</strong>: Evaluate performance with randomized AK8 jet selection</li>
+</ol>
+
+<h4 id="221-signal-efficiency-and-fake-jet-studies">2.2.1 Signal Efficiency and Fake Jet Studies</h4>
+
+<p><strong>Objective</strong>: Assess signal efficiency by identifying potential fake signals that mimic top jets.</p>
+
+<p><strong>Methodology</strong>:</p>
+<ol>
+  <li>
+<strong>Geometric matching</strong>: Examine ΔR between post-FSR generator-level top quarks and reconstructed AK8 jets</li>
+  <li>
+<strong>Discriminant analysis</strong>: Evaluate soft-drop mass and top tagger scores for nearby AK8 jets to assess misidentification probability</li>
+</ol>
+
+<p><strong>Results for WR = 5000, MN = 4900 GeV</strong>:</p>
+
+<p><strong>Key findings</strong>:</p>
+<ul>
+  <li>
+<strong>Clean separation</strong>: No overlap with other fat jets in signal region</li>
+  <li>
+<strong>Low-mass artifacts</strong>: Missing entries at low soft-drop mass due to poor jet reconstruction</li>
+  <li>
+<strong>B-jet leakage signature</strong>: Soft-drop mass range 80-150 GeV corresponds to top jets missing b-quarks</li>
+  <li>
+<strong>Mass dependence</strong>: WR~N/2 shows more b-quark leakage than WR~N due to reduced WR* boost → less collimated decay products</li>
+</ul>
+
+<h4 id="222-signal-selection-efficiency">2.2.2 Signal Selection Efficiency</h4>
+
+<p><strong>Overall performance assessment</strong>: Application of top tagger and soft-drop mass cuts to complete signal sample</p>
+
+<p><strong>Efficiency results</strong>: 499/500 events (99.8%) successfully identify signal top quarks with AK8 jets</p>
+
+<p><strong>Mass point comparisons</strong>:</p>
+
+<p><strong>WR = 5000, MN = 4900 GeV</strong>:</p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729202722.png" alt="Pasted image 20250729202722.png"></p>
+
+<h4 id="223-fake-jet-background-assessment">2.2.3 Fake Jet Background Assessment</h4>
+
+<p><strong>Random AK8 selection test</strong>: Evaluate false positive rate when applying top tagging and soft-drop mass cuts to arbitrary AK8 jets</p>
+
+<p><strong>Key findings</strong>:</p>
+<ul>
+  <li>
+<strong>Primary signal identification</strong>: Closest ΔR match reliably identifies true signal</li>
+  <li>
+<strong>Secondary contamination</strong>: Some jets within ΔR &lt; 0.8 pass selection cuts</li>
+</ul>
+
+<h4 id="224-fake-ak8-jet-classification">2.2.4 Fake AK8 Jet Classification</h4>
+
+<p><strong>Event categories</strong>: No events with 3+ top-tagged jets observed</p>
+
+<p><strong>Classification scheme</strong>:</p>
+<ol>
+  <li>
+<strong>Single AK8</strong>: One jet passes selection</li>
+  <li>
+<strong>Double AK8</strong>: Two jets pass selection</li>
+</ol>
+
+<h5 id="analysis-for-wr--5000-mn--4900-gev">Analysis for WR = 5000, MN = 4900 GeV</h5>
+
+<p><strong>Double AK8 scenarios</strong>:</p>
+<ul>
+  <li>
+<strong>2S (two signal)</strong>: Not possible → no additional AK8 jets within ΔR &lt; 0.8 of signal</li>
+  <li>
+<strong>Event classification</strong>:
+    <ol>
+      <li>
+<strong>1F1S</strong>: One jet within ΔR &lt; 0.8 + one jet outside ΔR &gt; 0.8 pass cuts</li>
+      <li>
+<strong>2F</strong>: Closest jet fails cuts + two jets outside ΔR &gt; 0.8 pass cuts</li>
+    </ol>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event Type</th>
+      <th>2F (two fake)</th>
+      <th>1F1S (one fake + signal)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2 AK8 jets</td>
+      <td>Low rate</td>
+      <td>Moderate rate</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Single AK8 scenarios</strong>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event Type</th>
+      <th>1F (one fake)</th>
+      <th>1S (signal only)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 AK8 jet</td>
+      <td>Low rate</td>
+      <td>Dominant</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Key observations</strong>:</p>
+<ul>
+  <li>
+<strong>Single AK8 events</strong>: No issues, dominant contribution with clear signal identification</li>
+  <li>
+<strong>Double AK8 events</strong>: Lower rate but challenging discrimination → top tagger shows limited separation, soft-drop mass distributions similar to genuine top jets</li>
+</ul>
+
+<h5 id="angular-analysis-and-interpretation">Angular Analysis and Interpretation</h5>
+
+<p><strong>Hypothesis</strong>: Double AK8 events may result from b-quark/top-quark angular correlation creating secondary jets outside ΔR &gt; 0.8</p>
+
+<p><strong>Investigation approach</strong>:</p>
+<ol>
+  <li>
+<strong>LHE-level analysis</strong>: Study η, φ separations between b quarks from different sources</li>
+  <li>
+<strong>Reconstructed jet correlations</strong>: Examine η, φ differences between AK8 jets and generator-level tops</li>
+  <li>
+<strong>Mass correlation</strong>: High soft-drop masses potentially due to WR*→b contamination</li>
+  <li>
+<strong>Back-to-back topology</strong>: Study large ΔR events with opposite φ values</li>
+</ol>
+
+<p><strong>Key questions</strong>:</p>
+<ul>
+  <li>How often do WR* b quarks fall outside ΔR = 0.8 cone?</li>
+  <li>What fraction of single AK8 events contain hidden b quarks?</li>
+  <li>Are double AK8 events predominantly from b-quark leakage scenarios?</li>
+</ul>
+
+<p><strong>Conclusions from angular analysis</strong>:</p>
+<ul>
+  <li>
+<strong>η difference/sum limitations</strong>: Near-zero values make it difficult to distinguish back-to-back vs collinear configurations</li>
+  <li>
+<strong>Dominant pattern</strong>: Sum distribution peaks near 0, with very few events beyond 3 → confirms predominantly back-to-back topology</li>
+  <li>
+<strong>Rare collinear cases</strong>: Small fraction shows same-direction propagation</li>
+  <li>
+<strong>Fake jet mechanism</strong>: Collinear events likely create additional ΔR~0.8 cones from W-boson (from top) + b-quark (from WR*) combinations</li>
+  <li>
+<strong>Event rate consistency</strong>: No more than 2 AK8 jets pass baseline cuts, consistent with this interpretation</li>
+</ul>
+
+<h4 id="225-ak8-jet-cleaning-and-efficiency-losses">2.2.5 AK8 Jet Cleaning and Efficiency Losses</h4>
+
+<p>For cleaning strategy, it must not overlap with signal muons that is selected and should not be overlapped with other ak8 jets. Did not consider overlapping with ak4 because it also can be reco with AK4.</p>
+
+<p><strong>After cleaning, top pt:</strong></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200648.png" alt="Pasted image 20250729200648.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200658.png" alt="Pasted image 20250729200658.png"></p>
+
+<h5 id="2251-b-jet-cross-contamination-analysis">2.2.5.1 B-Jet Cross-Contamination Analysis</h5>
+
+<p><strong>Issue</strong>: Back-to-back b-jets occasionally enter AK8 cones, though rate is relatively low</p>
+
+<p><strong>Method</strong>: Use LHE-level b-quarks to measure ΔR between signal b-jets and top jets for contamination assessment</p>
+
+<p><strong>Contamination rates</strong>:</p>
+
+<p><strong>WR = 5000, MN = 4900 GeV</strong>:</p>
+<ul>
+  <li>
+<strong>WR* b-jets entering AK8</strong>: 678/39,968 jets (1.2%)</li>
+  <li>
+<strong>Top b-jets escaping AK8</strong>: 3,303/39,968 jets (8.26%)</li>
+</ul>
+
+<p><strong>WR = 5000, MN = 2500 GeV</strong>:</p>
+<ul>
+  <li>
+<strong>WR* b-jets entering AK8</strong>: 4,710/56,759 jets (8.3%)</li>
+  <li>
+<strong>Top b-jets escaping AK8</strong>: 12,591/56,759 jets (22.18%)</li>
+</ul>
+
+<h4 id="226-top-tagging-recommendation-after-cleaning">2.2.6 Top tagging recommendation after cleaning</h4>
+
+<p><strong>Reference</strong>: <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/JetTopTagging#Workings_points_for_the_AK8_tagg">CMS Top Tagging Working Points</a></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729132038.png" alt="Pasted image 20250729132038.png"></p>
+
+<p>There is a WP with variable tau3/tau2 but it has low eff than particle net so It should be waitten until WP came with version NanoAOD v 15</p>
+
+<p><strong>For working process:</strong></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729191656.png" alt="Pasted image 20250729191656.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729191752.png" alt="Pasted image 20250729191752.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729191722.png" alt="Pasted image 20250729191722.png"></p>
+
+<p>It might be better to use Loose WP due to high pt and for stable with error.</p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729192412.png" alt="Pasted image 20250729192412.png"></p>
+
+<p>which this plot show when cut slight adjusted.</p>
+
+<h4 id="227-conclusion">2.2.7 Conclusion</h4>
+
+<p><strong>When two top jets are found</strong>: If the masses are similar and they are adjacent to each other, there’s no need to search for additional b-jets.</p>
+
+<p><strong>When only one top jet is present</strong>:</p>
+<ul>
+  <li>Case where b escapes from t and WR b doesn’t enter: distinguishable by SDM</li>
+  <li>Case where b escapes from t and WR b enters: very rare, need to review if kinematically possible</li>
+  <li>Case where b doesn’t escape from t and WR b enters: AK8 mass should be very large</li>
+</ul>
+
+<p><strong>Summary of events to discard</strong>:</p>
+
+<p>AK8 Jet:</p>
+<ol>
+  <li>When top tagger 0.9, SDM 120 or higher are set as baseline (40% ~ 50%) → low soft drop mass cases, b escape cases</li>
+  <li>When two AK8s appear (when b jet protrudes forward) (5%)</li>
+  <li>When one AK8 appears
+    <ul>
+      <li>Among these, when WR*b enters (1% ~ 8%)</li>
+    </ul>
+  </li>
+</ol>
+
+<p>→ For WR 5000 N 4900 case, probability of obtaining clean and accurate top signal: ~55%
+→ For WR 5000 N 2500 case, probability of obtaining clean and accurate top signal: ~40%</p>
+
+<h3 id="23-b-jet-analysis">2.3 B-Jet Analysis</h3>
+
+<h4 id="231-b-jet-identification-efficiency">2.3.1 B-Jet Identification Efficiency</h4>
+
+<p><strong>Objective</strong>: Identify signal b-jets from WR* decay without relying primarily on jet mass reconstruction</p>
+
+<p><strong>Task</strong>: Identify AK4 jets originating from signal b-quarks</p>
+
+<h5 id="geometric-matching-algorithm">Geometric Matching Algorithm</h5>
+
+<p><strong>Truth matching procedure</strong>:</p>
+<ol>
+  <li>Use LHE b-quarks as ground truth for signal b identification</li>
+  <li>Find closest AK4 jet to each LHE b-quark using ΔR matching</li>
+</ol>
+
+<p><strong>Distance criteria observed</strong>:</p>
+<ul>
+  <li>
+<strong>Primary matches</strong>: Closest AK4 typically within ΔR &lt; 0.4 (majority of cases)</li>
+  <li>
+<strong>Secondary jets</strong>: Second-closest jets predominantly fall outside ΔR &gt; 0.4</li>
+  <li>
+<strong>Matching reliability</strong>: LHE-to-closest-AK4 matching appears robust for signal identification</li>
+</ul>
+
+<h5 id="performance-validation-studies">Performance Validation Studies</h5>
+
+<p><strong>B-tagging algorithm comparison</strong> (AK4 + AK8 + 2 leptons):</p>
+
+<p><strong>DeepJet algorithm</strong> [2022, Tight, 0.7183]:</p>
+<ul>
+  <li>Efficiency: 8.195% → 8.08% after HLT_IsoMu30 trigger</li>
+</ul>
+
+<p><strong>ParticleNet algorithm</strong> [2022, Tight, 0.6734]:</p>
+<ul>
+  <li>Efficiency: 8.63% → 8.465% after HLT_IsoMu30 trigger</li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200810.png" alt="Pasted image 20250729200810.png"></p>
+
+<p><strong>Combined selection efficiency</strong> (2 AK8 + 2 leptons):</p>
+<ul>
+  <li>Overall efficiency: 26.9% → 26.375% after HLT_IsoMu30 trigger</li>
+</ul>
+
+<h4 id="232-after-cleaning">2.3.2 After cleaning</h4>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200521.png" alt="Pasted image 20250729200521.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200534.png" alt="Pasted image 20250729200534.png"></p>
+
+<h4 id="233-wr-mass-reconstruction-studies">2.3.3 WR Mass Reconstruction Studies</h4>
+
+<p><strong>Reconstruction scenarios tested</strong> for WR = 5000, MN = 2500 GeV:</p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200943.png" alt="Pasted image 20250729200943.png">
+It is for another scenario bur it is quite well matched shape , which means it is well selected not choosing fake from signal sample.</p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200302.png" alt="Pasted image 20250729200302.png"></p>
+
+<p>When N is slightly boosted , N has less power to boost t , b which makes top slow and w ,b got outside of top jets.</p>
+
+<h4 id="234-b-jet-selection">2.3.4 B jet selection</h4>
+<p>For working point in 2022 , 
+ jet was selected with pt &gt; 30 , eta &lt; 2.5 , tight ID 
+<img src="/img/DB/Pasted%20image%2020250811154058.png" alt="Pasted image 20250811154058.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250811152500.png" alt="Pasted image 20250811152500.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250811152518.png" alt="Pasted image 20250811152518.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250811152620.png" alt="Pasted image 20250811152620.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250811152637.png" alt="Pasted image 20250811152637.png"></p>
+
+<p>Choosed  particle Net which is the most best score and tight . 
+also pt &gt; 30 , eta &lt; 2.5.</p>
+
+<h3 id="24-lepton-analysis">2.4 Lepton Analysis</h3>
+
+<h4 id="241-muon-features">2.4.1 Muon features</h4>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200035.png" alt="Pasted image 20250729200035.png"></p>
+
+<ul>
+  <li>Number of reco muon by mass points</li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250730233023.png" alt="Pasted image 20250730233023.png"></p>
+<ul>
+  <li>Checking if the leading and subleading muon is same with lhe muons.</li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200201.png" alt="Pasted image 20250729200201.png"></p>
+
+<ul>
+  <li>Checking how much muon get inside top jet , which will make loss of signal .</li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200217.png" alt="Pasted image 20250729200217.png"></p>
+
+<ul>
+  <li>Checking all of reco muon and signal muon pt , to get safe pt cut from getting fake muon while using leading , subleading  muon .</li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250729200405.png" alt="Pasted image 20250729200405.png"></p>
+
+<ul>
+  <li>Checking Mll to get advantage to seperate background .</li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250730224242.png" alt="Pasted image 20250730224242.png"></p>
+
+<ul>
+  <li>Also checked  mll and pt cut to make sure how much pt would seperate well from fake muon .</li>
+</ul>
+
+<h4 id="242-lepton-cleaning">2.4.2 Lepton cleaning</h4>
+
+<p><strong>Cases where they entered this ak8</strong> (b jet overlap cases were not many in 5000 4900):
+→ It seems we can use leptons from lhe and use the found fatjet.</p>
+
+<p><strong>WR 5000 N2500</strong>:
+survived jet: 52313 // cleaned jet: 4410 // total jet: 56723
+@ On average, 4 muons are contained.</p>
+
+<p><strong>WR 5000 N 4900</strong>:
+survived jet: 36003 // cleaned jet: 3953 // total jet: 39956
+@ On average, 6.5 muons are contained.</p>
+
+<h4 id="243-lepton-id-trigger-selection">2.4.3 Lepton ID, Trigger selection</h4>
+
+<p>To get Leptons, first it should go through HLT, and we should choose leptons with ID.</p>
+
+<p><strong>For Muon, checking features first:</strong></p>
+
+<p><strong>1. pt</strong></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729132747.png" alt="Pasted image 20250729132747.png"></p>
+
+<p><strong>2. High pt id and isolated</strong></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729132904.png" alt="Pasted image 20250729132904.png"></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729132927.png" alt="Pasted image 20250729132927.png"></p>
+
+<p>which mean we can use high pt id, and iso id, must also check recommendation.</p>
+
+<p><strong>HLT recommendation gives:</strong></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729133637.png" alt="Pasted image 20250729133637.png"></p>
+
+<p><strong>And for ID’s:</strong></p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729143825.png" alt="Pasted image 20250729143825.png"></p>
+
+<p><strong>Conclusion</strong>: For muon selection, use:</p>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td colspan="2">
+<strong>HLT</strong>: HLT_Mu50</td>
+          <td colspan="2">HLT_HighPtTkMu100</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+<strong>ID</strong>: HighptID == 2 (tight), Muon_tkIsoId == 2 (tight)</li>
+  <li>
+<strong>pT cut</strong>: starts from 50 GeV for SF availability</li>
+</ul>
+
+<p><img src="/img/DB/Pasted%20image%2020250729152205.png" alt="Pasted image 20250729152205.png"></p>
+
+<hr>
+
+<h2 id="3-background-analysis">3. Background Analysis</h2>
+
+<h3 id="31-selection">3.1 Selection</h3>
+<h4 id="311--v1">3.1.1  v1</h4>
+<p><strong>Selection cuts comparison:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cut</th>
+      <th>HLT</th>
+      <th>lead Muon pt</th>
+      <th>sub lead muon pt</th>
+      <th>Bjet</th>
+      <th>B pt</th>
+      <th>Top score</th>
+      <th>Top SDM</th>
+      <th>Top pt</th>
+      <th>WR mass</th>
+      <th>m(ll)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cut1</td>
+      <td>ISOMU30</td>
+      <td>
+<blockquote>
+  <p>30</p>
+</blockquote>
+</td>
+      <td>0</td>
+      <td>Tight</td>
+      <td>30</td>
+      <td>0.9</td>
+      <td>120 250</td>
+      <td>0</td>
+      <td>2000</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>cut2</td>
+      <td>ISOMU30</td>
+      <td>
+<blockquote>
+  <p>30</p>
+</blockquote>
+</td>
+      <td>0</td>
+      <td>Tight</td>
+      <td>300</td>
+      <td>0.9</td>
+      <td>120 250</td>
+      <td>500</td>
+      <td>2000</td>
+      <td>300</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>cut1</strong>: BKG → TTHtononbb, TTLJ, TTTT, TTWtonu, TTZ, TZq</p>
+
+<p><strong>cut2</strong>: BKG → ST_TW_antitop_Semilep, ST_tW_top_Semilep, TTG_PTG200toinf, TTHToNonbb, TTLJ, TTTT, TTWtoNu, TTZ_M4to50, TTZ_M50, TTZ_NoFullyHad</p>
+
+<p><img src="/img/DB/Pasted%20image%2020250729193430.png" alt="Pasted image 20250729193430.png"></p>
+
+<p><strong>Issues with these cuts:</strong></p>
+
+<ol>
+  <li>Muon trigger is not a recommended one, also it is isolated and high pt, which can use other HLT</li>
+  <li>No Muon ID selected, also pt cut must be chosen with Muon ID min pt</li>
+  <li>For cut2 B pt is too high to adjust scale factors. It should have some pt to measure scale factor which we can observe in data</li>
+  <li>Also mll cut or wr mass cut gives large constraints of background, which makes it not available to measure SF which is the discrepancy of data and signal</li>
+</ol>
+
+<h4 id="312-v2">3.1.2 v2</h4>
+
+<ol>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td colspan="2">Use Trigger for muon with HLT_Mu50</td>
+          <td colspan="2">HLT_HighPtTkMu100</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Muon ID using both high pt id and tkIsoId</li>
+  <li>muon pt/eta 50/2.5  bjet pt/eta 30/2.5</li>
+  <li>not applied WR mass cut to check SR / CR</li>
+</ol>
+
+<h3 id="32-cr-setting">3.2 CR setting</h3>
+<h4 id="321-introduce">3.2.1 introduce</h4>
+<p>main background is ttbar . variable can be set with m(lljJ)
+For low mass , ttbar  and High mass , OF ttbar could be good.
+top jet number should be one? + t and b jet delta r –&gt; check which is main bkg</p>
+
+<hr>
+<h2 id="summary-and-conclusions">Summary and Conclusions</h2>
+
+<p>This analysis presents a comprehensive study of the LRSM WR→tb channel, focusing on the WR ~ N mass region to optimize signal reconstruction and background rejection. Key findings include:</p>
+
+<ol>
+  <li>
+<strong>Kinematic Understanding</strong>: The WR ~ N mass region provides better separation of decay products compared to the highly boosted regime</li>
+  <li>
+<strong>Top Jet Reconstruction</strong>: AK8 jets with ParticleNet top tagging achieve ~55-40% efficiency after cleaning</li>
+  <li>
+<strong>B-jet Identification</strong>: AK4 b-jets can be identified with moderate efficiency using geometric matching and flavor tagging</li>
+  <li>
+<strong>Lepton Selection</strong>: High-pT muon triggers and tight ID requirements are essential for signal selection</li>
+  <li>
+<strong>Background Challenges</strong>: Careful optimization of selection cuts is needed to maintain sensitivity while allowing for scale factor measurements</li>
+</ol>
+
+<p>Future work should focus on optimizing the selection criteria and developing data-driven background estimation methods.</p>
+
+<hr>
+
+<h2 id="appendix-a-technical-details">Appendix A: Technical Details</h2>
+
+<h3 id="a1-software-and-analysis-framework">A.1 Software and Analysis Framework</h3>
+
+<p><strong>Analysis Tools</strong>:</p>
+<ul>
+  <li>MadGraph for signal generation</li>
+  <li>ROOT framework for data analysis</li>
+  <li>NanoAOD format for event storage</li>
+  <li>ParticleNet for top/b-tagging</li>
+</ul>
+
+<h3 id="a2-selection-criteria-summary">A.2 Selection Criteria Summary</h3>
+
+<p><strong>Final Recommended Cuts</strong>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object</th>
+      <th>Selection Criteria</th>
+      <th>Efficiency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Muons</td>
+      <td>pT &gt; 50 GeV, HighPtID=2, tkIsoId=2</td>
+      <td>~90%</td>
+    </tr>
+    <tr>
+      <td>AK8 Jets</td>
+      <td>pT &gt; 200 GeV, ParticleNet &gt; 0.9, 120 &lt; SDM &lt; 250 GeV</td>
+      <td>~55-40%</td>
+    </tr>
+    <tr>
+      <td>AK4 b-jets</td>
+      <td>pT &gt; 30 GeV, DeepJet Tight WP</td>
+      <td>~8%</td>
+    </tr>
+    <tr>
+      <td>HLT</td>
+      <td>HLT_Mu50 OR HLT_HighPtTkMu100 OR HLT_CascadeMu100</td>
+      <td>~95%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="a3-systematic-uncertainties">A.3 Systematic Uncertainties</h3>
+
+<p><strong>Expected Sources</strong>:</p>
+<ul>
+  <li>Jet Energy Scale/Resolution</li>
+  <li>b-tagging scale factors</li>
+  <li>Top-tagging scale factors</li>
+  <li>Muon ID/trigger scale factors</li>
+  <li>Luminosity uncertainty</li>
+  <li>PDF uncertainties</li>
+</ul>
+
+<h3 id="a4-background-composition">A.4 Background Composition</h3>
+
+<p><strong>Dominant Backgrounds</strong>:</p>
+<ul>
+  <li>tt̄ + jets (dominant)</li>
+  <li>Single top</li>
+  <li>tt̄ + V (V = W, Z)</li>
+  <li>tt̄ + H</li>
+  <li>Diboson production</li>
+</ul>
+
+<h3 id="a5-signal-optimization-strategy">A.5 Signal Optimization Strategy</h3>
+
+<p><strong>Mass-dependent Approach</strong>:</p>
+<ul>
+  <li>WR ~ N region: Resolved analysis with separated objects</li>
+  <li>High WR region: Boosted analysis with merged jets</li>
+  <li>Transition region: Hybrid approach</li>
+</ul>
+
+<hr>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>CMS Collaboration, “Search for heavy right-handed W bosons in events with an electron and missing transverse momentum” (EXO-20-002)</li>
+  <li>CMS Top Tagging Working Group recommendations</li>
+  <li>CMS B-tagging Performance Studies, Summer22</li>
+  <li>CMS Muon Performance Studies, Run 3</li>
+  <li>Left-Right Symmetric Model theoretical framework</li>
+</ol>
+
+<hr>
+
+<p><em>Document optimized for Claude Code analysis and PDF conversion</em></p>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<span></span><span></span>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        </ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div></div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
