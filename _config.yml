@@ -18,6 +18,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-spaceship
 
 permalink: /:categories/:year/:month/:day/:title/
 
