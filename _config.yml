@@ -1,0 +1,33 @@
+title: Chi Hwan's Blog
+description: HEP Physics Research & Development Blog
+url: "https://hepchihwan.github.io"
+baseurl: ""
+
+author:
+  name: Chi Hwan
+  email: your-email@example.com
+
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+permalink: /:categories/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Chi Hwan"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
