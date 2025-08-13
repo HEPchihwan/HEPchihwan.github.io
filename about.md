@@ -35,16 +35,13 @@ CMS 실험에서 Run3 환경의 tau lepton trigger 시스템 성능을 연구하
 - Rate vs efficiency 최적화
 
 ### LRSM Heavy Neutrino Search  
-Left-Right Symmetric Model에서 예측하는 무거운 뉴트리노 탐색:
-- W_R → eN, μN decay channel 분석
-- Same-sign dilepton + jets final state
-- Background estimation과 systematic uncertainty
+Left-Right Symmetric Model에서 예측하는 무거운 뉴트리노 탐색
 
 ## 연락처
 
 - **GitHub**: [HEPchihwan](https://github.com/HEPchihwan)
-- **Email**: contact@chihwanresearch.com
-
+- **Email**: an.chihwan@cern.ch
+- **orcid** : https://orcid.org/0009-0002-6344-4496
 ---
 
 *이 블로그에서는 연구 과정, 학습 내용, 그리고 물리학에 대한 생각들을 공유합니다.*
