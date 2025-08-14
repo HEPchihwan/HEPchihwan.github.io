@@ -28,7 +28,15 @@
       "Bash(gh workflow:*)",
       "WebFetch(domain:hepchihwan.github.io)",
       "Bash(bundle exec jekyll:*)",
-      "Bash(bundle show:*)"
+      "Bash(bundle show:*)",
+      "Bash(brew install:*)",
+      "Bash(source:*)",
+      "Bash(/opt/homebrew/opt/ruby/bin/ruby --version)",
+      "Bash(/opt/homebrew/opt/ruby/bin/gem install bundler)",
+      "Bash(/opt/homebrew/opt/ruby/bin/bundle install)",
+      "Bash(/opt/homebrew/opt/ruby/bin/bundle exec jekyll serve)",
+      "Bash(bundle install:*)",
+      "Bash(brew list:*)"
     ],
     "deny": [],
     "ask": []
