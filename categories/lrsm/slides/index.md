@@ -1,9 +1,11 @@
 ---
 layout: post
-title: LRSM
-permalink: /categories/lrsm/slides
-heading: "LRSM"
-subheading: "Left-Right Symmetric Model"
+title: Slides
+date: 2025-08-13 13:12:00 +0900
+categories: lrsm slides
+permalink: /categories/lrsm/slides/
+heading: "Slides"
+subheading: "LRSM Slides and Presentations"
 ---
 
 # Left-Right Symmetric Model (LRSM)
