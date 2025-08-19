@@ -15,7 +15,7 @@ Run3 CMS 환경에서 tau lepton trigger 시스템의 성능 평가와 최적화
 
 ## 서브카테고리
 - [isomu](/categories/epr/tautrigger/) - tau triggers  ( iso mu example )
-- [Deeptau](/categories/epr/deeptau/) -  tau triggers  ( HLT_LooseDeepTauPFTauHPS180_L2NN_eta2p1_v )
+- [Deeptau](/categories/epr/Deeptau/) -  tau triggers  ( HLT_LooseDeepTauPFTauHPS180_L2NN_eta2p1_v )
 
 ## 주요 연구 내용
 ### Tau Trigger Performance

@@ -28,6 +28,7 @@ subheading: "HEP Physics Research & Development"
 - [Public_talk](https://cms-pub-talk.web.cern.ch/)
 - [HLT_info](https://cmshltinfo.app.cern.ch/summary)
 - [HLT_Upgrade](https://cmshltupgrade.docs.cern.ch/)
+- [HLT_Trigger](https://cmssdt.cern.ch/lxr/source/HLTrigger/Configuration/python/HLT_2024v14_cff.py?v=CMSSW_14_0_21_patch1)
 - [CADI](https://cms.cern.ch/iCMS/analysisadmin/cadilines?awg=EXO&awgyear=2024)
 - [Run3_Sample_preparation](https://docs.google.com/spreadsheets/d/1xEbHtxzJVaWJpxDrJ7tSpxcVQMRIFbZeoeO7davNFMA/edit?gid=1396344675#gid=1396344675)
 - [DAS](https://cmsweb.cern.ch/das/)
