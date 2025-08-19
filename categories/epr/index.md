@@ -14,8 +14,8 @@ Tau trigger 성능 연구를 위한 EPR (Equipment Performance Report) task입�
 Run3 CMS 환경에서 tau lepton trigger 시스템의 성능 평가와 최적화를 수행합니다.
 
 ## 서브카테고리
-- [Papers](/categories/epr/papers/) - 관련 논문과 참고 자료
-- [Research](/categories/epr/research/) - 연구 계획과 진행 상황
+- [Papers](/categories/epr/tautrigger/) - tau triggers
+- [Research](/categories/epr/research/) - 
 
 ## 주요 연구 내용
 ### Tau Trigger Performance

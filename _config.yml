@@ -44,6 +44,15 @@ yat:
     sidebar:
       enable: false
 
+# Custom CSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Include custom assets
+include:
+  - assets/css/custom.css
+
 defaults:
   - scope:
       path: ""
