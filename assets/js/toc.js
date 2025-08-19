@@ -63,8 +63,8 @@ function generateTableOfContents() {
   
   toc.appendChild(ul);
   
-  // Insert TOC at the beginning of content
-  content.insertBefore(toc, content.firstChild);
+  // Add TOC to body as fixed sidebar
+  document.body.appendChild(toc);
   
   // Add smooth scrolling functionality
   addSmoothScrolling(toc);

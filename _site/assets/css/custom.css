@@ -14,11 +14,14 @@
   border: 1px solid #e9ecef;
   border-radius: 6px;
   padding: 20px;
-  margin-bottom: 30px;
   max-height: 70vh;
   overflow-y: auto;
-  position: sticky;
-  top: 100px;
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  width: 280px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .toc h2 {
@@ -75,6 +78,7 @@
 [data-theme="dark"] .toc {
   background-color: #2d3339;
   border-color: #454d55;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .toc h2 {
@@ -91,13 +95,25 @@
   color: #f8f9fa;
 }
 
+/* Add margin to content when TOC is present */
+.post-content:has(.toc) {
+  margin-right: 320px;
+}
+
 /* Responsive adjustments */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .toc {
     position: relative;
     top: auto;
+    right: auto;
+    width: 100%;
     max-height: 300px;
     margin-bottom: 20px;
+    box-shadow: none;
+  }
+  
+  .post-content:has(.toc) {
+    margin-right: 0;
   }
 }
 
