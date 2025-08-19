@@ -18,11 +18,11 @@
 <meta property="og:url" content="https://hepchihwan.github.io/categories/practice/datasim/">
 <meta property="og:site_name" content="Chi Hwan’s Blog">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2025-08-13T12:06:00+09:00">
+<meta property="article:published_time" content="2025-08-18T12:06:00+09:00">
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="DATA/SIM">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Chi Hwan"},"dateModified":"2025-08-13T12:06:00+09:00","datePublished":"2025-08-13T12:06:00+09:00","description":"HEP Physics Research &amp; Development Blog","headline":"DATA/SIM","mainEntityOfPage":{"@type":"WebPage","@id":"https://hepchihwan.github.io/categories/practice/datasim/"},"url":"https://hepchihwan.github.io/categories/practice/datasim/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Chi Hwan"},"dateModified":"2025-08-18T12:06:00+09:00","datePublished":"2025-08-18T12:06:00+09:00","description":"HEP Physics Research &amp; Development Blog","headline":"DATA/SIM","mainEntityOfPage":{"@type":"WebPage","@id":"https://hepchihwan.github.io/categories/practice/datasim/"},"url":"https://hepchihwan.github.io/categories/practice/datasim/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="icon" href="">
   <link rel="canonical" href="https://hepchihwan.github.io">
@@ -699,50 +699,14 @@ function googleTranslateElementInit() {
         <img class="img-placeholder" src="/img/KakaoTalk_20250813_191149495.jpg">
 </div>
     <div class="wrapper">
-      <div class="page-banner-inner">
-<header class="post-header">
-  <h1 class="post-title p-name" itemprop="name headline">DATA/SIM</h1>
-  <h2 class="post-subtitle">Data vs Simulation Comparison</h2>
-
-  <div class="post-meta">
-    <time class="dt-published" datetime="2025-08-13T12:06:00+09:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Aug 13, 2025
-    </time>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
-  </div></header>
-</div>
+      <div class="page-banner-inner"><div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              DATA/SIM
+            </h1>
+            <h2 class="page-banner-subheading">
+              Data vs Simulation Comparison
+            </h2>
+          </div></div>
     </div>
   </section><script>
   function hashLocate(hashValue) {
@@ -919,189 +883,186 @@ function googleTranslateElementInit() {
         <div class="framework">
   <section class="main">
 
-     <div class="post">
-  <section>
+     <div class="articles">
+  
 
+  <link rel="stylesheet" href="/assets/css/custom.css">
+<script src="/assets/js/toc.js" defer></script>
 
-
-
-
-
-
-
-
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="post-content e-content" itemprop="articleBody">
-
-      <h1 id="datasim">DATA/SIM</h1>
-
-<p>실험 데이터와 Monte Carlo 시뮬레이션 간의 차이점과 보정 방법을 다룹니다.</p>
+<div class="post-content">
+<h1 id="datasim">DATA/SIM</h1>
 
 <h2 id="drell-yan--z---mu-mu-">Drell Yan ( Z -&gt; mu mu )</h2>
 
 <h3 id="selections">Selections</h3>
 <ul>
-  <li>HLT : Isomu24</li>
-  <li>safeptcut : 26</li>
-  <li>ID : POGTIGHT</li>
+  <li>HLT        : Isomu24</li>
+  <li>safeptcut  : 26</li>
+  <li>ID         : POGTIGHT</li>
   <li>pt/eta cut : 30 / 2.4</li>
   <li>leading , subleading muon , opposite charge</li>
-  <li>Not overlapped each other</li>
 </ul>
 
 <p><em>Results</em>
-[2022 C,D ERA]
-<img src="image.png" alt="alt text"></p>
+[2022 C,D ERA]</p>
+
+<p><img src="DY_DileptonZMass_comparison_2022.png" alt="alt text"></p>
 
 <p><em>Reference results</em></p>
 
 <p><img src="image-1.png" alt="alt text"></p>
 
 <ul>
-  <li>SMP 16-009</li>
+  <li>
+    <p>SMP 16-009</p>
+  </li>
+  <li>
+    <p>Discrepancy reasons : 
+1 . Pt cut 30 makes inv Dilepton inv mass &lt; 60 less precise .</p>
+    <ol>
+      <li>NO scale factors applied , ~10% diff from data .</li>
+    </ol>
+  </li>
 </ul>
 
+<h2 id="ttbar--ttlj-">TTBar ( TTLJ )</h2>
 
-    </div>
+<h3 id="selections-1">Selections</h3>
+<ul>
+  <li>HLT        : Isomu24</li>
+  <li>safeptcut  : 26</li>
+  <li>ID         : POGTIGHT</li>
+  <li>pt/eta cut : 30 / 2.4</li>
+  <li>B jet      : ParticleNet Tight / 30 2.4</li>
+  <li>light jet  : 30 / 2.4</li>
+  <li>
+    <p>MET        : 30</p>
 
-</article>
-<div class="post-nav">
-<span></span><span></span>
+    <p>-&gt; Transverse Mass ( leading Muon + lead,subleading B jet, light jet + MET )</p>
+  </li>
+</ul>
+
+<p><em>Results</em>
+[2022 C,D ERA ]</p>
+
+<p><img src="TTbar_StackedMC_comparison_2022.png" alt="alt text"></p>
+
+<p><em>Reference results</em></p>
+
+<p><img src="TTLJ_ref.png" alt="alt text"></p>
+
+<ul>
+  <li>
+    <p>TOP 20-001</p>
+  </li>
+  <li>
+    <p>Discrepancy reasons :</p>
+    <ol>
+      <li>More complex states than DY</li>
+      <li>Inv mass &amp; transverse Inv mass Diff</li>
+      <li>Scale factor Diff</li>
+      <li>Used Boosted , resolved region</li>
+      <li>etc ..</li>
+    </ol>
+  </li>
+</ul>
+
+<hr>
+
+<p>UsedSample :</p>
+
+<p>WJets
+DYJets
+DYJets10to50
+TTLJ_powheg
+TTJJ_powheg
+TTLL_powheg
+TTWToLNu
+TTZ_M50
+TTZ_M4to50
+TTZ_NoFullyHad
+ST_sch_top_Lep
+ST_sch_antitop_Lep
+ST_tW_top_Semilep
+ST_tW_antitop_Semilep
+ST_tW_top_Lep
+ST_tW_antitop_Lep
+ST_tch_top
+ST_tch_antitop
+tZq
+TTTT
+WW_pythia
+WZ_pythia
+ZZ_pythia
+WWW
+WWZ
+WZZ
+ZZZ
+ZGToLLG
+ggHToZZTo4L
+VBFHToZZTo4L
+VHToNonbb
+TTHToNonbb
+tHq
+QCD_Pt-15to20_MuEnriched
+QCD_Pt-20to30_MuEnriched
+QCD_Pt-30to50_MuEnriched
+QCD_Pt-50to80_MuEnriched
+QCD_Pt-80to120_MuEnriched
+QCD_Pt-120to170_MuEnriched
+QCD_Pt-170to300_MuEnriched
+QCD_Pt-300to470_MuEnriched
+QCD_Pt-470to600_MuEnriched
+QCD_Pt-600to800_MuEnriched
+QCD_Pt-800to1000_MuEnriched
+QCD_Pt-1000toInf_MuEnriched</p>
+
 </div>
-<div class="post-related">
-      <div>Related Articles</div>
-      <ul>
-        </ul>
-    </div>
-<div class="post-comments"></div></section>
+
+  
+
+
+
+
+
 </div>
 
 
   </section>
   <section class="sidebar" style="margin-left: 15px;">
-    <!-- Get sidebar items --><style type="text/css" media="screen">
-.post-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-</style>
+    <!-- Get sidebar items -->
 
-<div class="post-menu">
-  <div class="post-menu-title">TOC</div>
-  <div class="post-menu-content"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="common-list">
+  <ul>
+    <li>
+      <a href="/index.html">
+        All<span>0</span>
+      </a>
+    </li>
+
+    
+  </ul>
 </div>
 
-<script>
-  function generateContent() {
-    var menu = document.querySelector(".post-menu");
-    var menuContent =  menu.querySelector(".post-menu-content");
-    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
-
-    // Hide menu when no headings
-    if (headings.length === 0) {
-      return menu.style.display = "none";
-    }
-
-    // Generate post menu
-    var menuHTML = '';
-    for (var i = 0; i < headings.length; i++) {
-      var h = headings[i];
-      menuHTML += (
-        '<li class="h-' + h.tagName.toLowerCase() + '">'
-        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
-    }
-
-    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
-
-    // The header element
-    var header = document.querySelector('header.site-header');
-
-    function doMenuCollapse(index, over_items) {
-      var items = menuContent.firstChild.children;
-
-      if (over_items == undefined) {
-        over_items = 20;
-      }
-
-      if (items.length < over_items) {
-        return;
-      }
-
-      var activeItem = items[index];
-      var beginItem = activeItem
-      var endItem = activeItem
-      var beginIndex = index;
-      var endIndex = index + 1;
-      while (beginIndex >= 0
-        && !items[beginIndex].classList.contains('h-h2')) {
-        beginIndex -= 1;
-      }
-      while (endIndex < items.length
-        && !items[endIndex].classList.contains('h-h2')) {
-        endIndex += 1;
-      }
-      for (var i = 0; i < beginIndex; i++) {
-        item = items[i]
-        if (!item.classList.contains('h-h2')) {
-          item.style.display = 'none';
-        }
-      }
-      for (var i = beginIndex + 1; i < endIndex; i++) {
-        item = items[i]
-        // if (!item.classList.contains('h-h2')) {
-          item.style.display = '';
-        // }
-      }
-      for (var i = endIndex; i < items.length; i++) {
-        item = items[i]
-        if (!item.classList.contains('h-h2')) {
-          item.style.display = 'none';
-        }
-      }
-    }
-
-    // Init menu collapsed
-    doMenuCollapse(-1);
-
-    // Active the menu item
-    window.addEventListener('scroll', function (event) {
-      var lastActive = menuContent.querySelector('.active');
-      var changed = true;
-      var activeIndex = -1;
-      for (var i = headings.length - 1; i >= 0; i--) {
-        var h = headings[i];
-        var headingRect = h.getBoundingClientRect();
-        var headerRect = header.getBoundingClientRect();
-        var headerTop = Math.floor(headerRect.top);
-        var headerHeight = Math.floor(headerRect.height);
-        var headerHeight = headerTop + headerHeight + 20;
-        if (headingRect.top <= headerHeight) {
-          var id = 'h-' + h.getAttribute('id');
-          var a = menuContent.querySelector('a[href="#' + id  + '"]');
-          var curActive = a.parentNode;
-          if (curActive) {
-            curActive.classList.add('active');
-            activeIndex = i;
-          }
-          if (lastActive == curActive) {
-            changed = false;
-          }
-          break;
-        }
-      }
-      if (changed) {
-        if (lastActive) {
-          lastActive.classList.remove('active');
-        }
-        doMenuCollapse(activeIndex);
-      }
-      event.preventDefault();
-    });
-  }
-  generateContent();
-</script>
 </section>
 </div>
 

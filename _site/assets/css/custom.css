@@ -1,0 +1,147 @@
+/* Custom CSS for fixing sidebar and TOC scrolling issues */
+
+/* Improve sidebar scrolling behavior */
+.framework .sidebar {
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+}
+
+/* Style for auto-generated table of contents */
+.toc {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 30px;
+  max-height: 70vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 100px;
+}
+
+.toc h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 8px;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc > ul {
+  margin-top: 10px;
+}
+
+.toc li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.toc li ul {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.toc a {
+  color: #6c757d;
+  text-decoration: none;
+  display: block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  font-size: 0.9em;
+}
+
+.toc a:hover {
+  background-color: #e9ecef;
+  color: #495057;
+  text-decoration: none;
+}
+
+.toc a.active {
+  background-color: #ff5100;
+  color: white;
+}
+
+/* Dark mode support for TOC */
+[data-theme="dark"] .toc {
+  background-color: #2d3339;
+  border-color: #454d55;
+}
+
+[data-theme="dark"] .toc h2 {
+  color: #e9ecef;
+  border-bottom-color: #454d55;
+}
+
+[data-theme="dark"] .toc a {
+  color: #adb5bd;
+}
+
+[data-theme="dark"] .toc a:hover {
+  background-color: #454d55;
+  color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 800px) {
+  .toc {
+    position: relative;
+    top: auto;
+    max-height: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Ensure post content doesn't have layout issues */
+.post-content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Improve scrollbar styling */
+.toc::-webkit-scrollbar,
+.framework .sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.toc::-webkit-scrollbar-track,
+.framework .sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.toc::-webkit-scrollbar-thumb,
+.framework .sidebar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.toc::-webkit-scrollbar-thumb:hover,
+.framework .sidebar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Dark mode scrollbar */
+[data-theme="dark"] .toc::-webkit-scrollbar-track,
+[data-theme="dark"] .framework .sidebar::-webkit-scrollbar-track {
+  background: #454d55;
+}
+
+[data-theme="dark"] .toc::-webkit-scrollbar-thumb,
+[data-theme="dark"] .framework .sidebar::-webkit-scrollbar-thumb {
+  background: #6c757d;
+}
+
+[data-theme="dark"] .toc::-webkit-scrollbar-thumb:hover,
+[data-theme="dark"] .framework .sidebar::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
+}

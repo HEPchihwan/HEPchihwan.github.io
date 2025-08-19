@@ -6,6 +6,8 @@ banner: 'default'
 ---
 
 <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
-<script src="{{ "/assets/js/toc.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/toc.js" | relative_url }}" defer></script>
 
+<div class="post-content">
 {{ content }}
+</div>
