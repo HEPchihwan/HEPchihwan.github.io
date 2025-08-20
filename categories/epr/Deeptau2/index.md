@@ -16,7 +16,7 @@ subheading: "phase2 upg"
 
 ❌  : No funtion exact same in phase 2 . Need modified . 
 
-🔵  : Things added in phase 2 . 
+🔵  : Things added or change in phase 2 . 
 
 🟨  : Things deleted in phase 2 .
 
@@ -176,8 +176,7 @@ fragment.hltPreAlCaEcalPhiSym = cms.EDFilter( "HLTPrescaler",
     L1GtReadoutRecordTag = cms.InputTag( "hltGtStage2Digis" )
 )
 ```
-
-#### 4. HLTL2TauTagNNSequence
+# 4. HLTL2TauTagNNSequence
 ``` python 
 fragment.HLTL2TauTagNNSequence = cms.Sequence( 
     4.1 fragment.HLTDoLocalPixelSequence + 
@@ -195,7 +194,7 @@ fragment.HLTL2TauTagNNSequence = cms.Sequence(
     4.13 fragment.hltL2TauTagNNProducer ) 
 ```
 
-##### 4.1 HLTDoLocalPixelSequence
+## 4.1 HLTDoLocalPixelSequence
 ```python 
 fragment.HLTDoLocalPixelSequence = cms.Sequence( 
     4.1.1 fragment.hltOnlineBeamSpotDevice + 
@@ -206,7 +205,7 @@ fragment.HLTDoLocalPixelSequence = cms.Sequence(
     4.1.6 fragment.hltSiPixelRecHits )
 ```
 
-###### 4.1.1 hltOnlineBeamSpotDevice ✅  
+### 4.1.1 hltOnlineBeamSpotDevice ✅  
 ```python 
 fragment.hltOnlineBeamSpotDevice = cms.EDProducer( "BeamSpotDeviceProducer@alpaka",
     src = cms.InputTag( "hltOnlineBeamSpot" ),
@@ -214,7 +213,7 @@ fragment.hltOnlineBeamSpotDevice = cms.EDProducer( "BeamSpotDeviceProducer@alpak
 )
 ```
 
-###### 4.1.2 hltSiPixelClustersSoA  🔵
+### 4.1.2 hltSiPixelClustersSoA  🔵
 ```python 
 fragment.hltSiPixelClustersSoA = cms.EDProducer( "SiPixelRawToClusterPhase1@alpaka",
     IncludeErrors = cms.bool( True ),
@@ -232,7 +231,7 @@ fragment.hltSiPixelClustersSoA = cms.EDProducer( "SiPixelRawToClusterPhase1@alpa
 )
 ```
 
-###### 4.1.3 hltSiPixelClusters 🔵
+### 4.1.3 hltSiPixelClusters 🔵
 ```python 
 fragment.hltSiPixelClusters = cms.EDProducer( "SiPixelDigisClustersFromSoAAlpakaPhase1",
     src = cms.InputTag( "hltSiPixelClustersSoA" ),
@@ -243,7 +242,7 @@ fragment.hltSiPixelClusters = cms.EDProducer( "SiPixelDigisClustersFromSoAAlpaka
 )
 ```
 
-###### 4.1.4 hltSiPixelDigiErrors ✅ 
+### 4.1.4 hltSiPixelDigiErrors ✅ 
 ```python
 fragment.hltSiPixelDigiErrors = cms.EDProducer( "SiPixelDigiErrorsFromSoAAlpaka",
     digiErrorSoASrc = cms.InputTag( "hltSiPixelClustersSoA" ),
@@ -255,7 +254,7 @@ fragment.hltSiPixelDigiErrors = cms.EDProducer( "SiPixelDigiErrorsFromSoAAlpaka"
 )
 ```
 
-###### 4.1.5 hltSiPixelRecHitsSoA ✅ 
+### 4.1.5 hltSiPixelRecHitsSoA ✅ 
 ```python 
 fragment.hltSiPixelRecHitsSoA = cms.EDProducer( "SiPixelRecHitAlpakaPhase1@alpaka",
     beamSpot = cms.InputTag( "hltOnlineBeamSpotDevice" ),
@@ -265,7 +264,7 @@ fragment.hltSiPixelRecHitsSoA = cms.EDProducer( "SiPixelRecHitAlpakaPhase1@alpak
 )
 ```
 
-###### 4.1.6 hltSiPixelRecHits ✅ 
+### 4.1.6 hltSiPixelRecHits ✅ 
 ```python 
 fragment.hltSiPixelRecHits = cms.EDProducer( "SiPixelRecHitFromSoAAlpakaPhase1",
     pixelRecHitSrc = cms.InputTag( "hltSiPixelRecHitsSoA" ),
@@ -273,23 +272,23 @@ fragment.hltSiPixelRecHits = cms.EDProducer( "SiPixelRecHitFromSoAAlpakaPhase1",
 )
 ```
 
-##### 4.2 HLTRecoPixelTracksSequence
+## 4.2 HLTRecoPixelTracksSequence
 ```python
 fragment.HLTRecoPixelTracksSequence = cms.Sequence( 
     4.2.1 fragment.hltPixelTracksSoA +  
     4.2.2 fragment.hltPixelTracks )
 ```
-###### 4.2.1 hltPixelTracksSoA🔵
+### 4.2.1 hltPixelTracksSoA🔵
 ```python 
 fragment.hltPixelTracksSoA = cms.EDProducer( "CAHitNtupletAlpakaPhase1@alpaka",
     pixelRecHitSrc = cms.InputTag( "hltSiPixelRecHitsSoA" ),
     CPE = cms.string( "PixelCPEFastParams" ),
     ptmin = cms.double( 0.9 ),
-    CAThetaCutBarrel = cms.double( 0.00123302705499 ),
-    CAThetaCutForward = cms.double( 0.00355691321774 ),
-    hardCurvCut = cms.double( 0.503169690002 ),
-    dcaCutInnerTriplet = cms.double( 0.0918113099491 ),
-    dcaCutOuterTriplet = cms.double( 0.420724617835 ),
+    CAThetaCutBarrel = cms.double( 0.00123302705499 ),🔵
+    CAThetaCutForward = cms.double( 0.00355691321774 ),🔵
+    hardCurvCut = cms.double( 0.503169690002 ),🔵
+    dcaCutInnerTriplet = cms.double( 0.0918113099491 ),🔵
+    dcaCutOuterTriplet = cms.double( 0.420724617835 ),🔵
     earlyFishbone = cms.bool( True ),
     lateFishbone = cms.bool( False ),
     fillStatistics = cms.bool( False ),
@@ -319,14 +318,14 @@ fragment.hltPixelTracksSoA = cms.EDProducer( "CAHitNtupletAlpakaPhase1@alpaka",
       tripletMinPt = cms.double( 0.5 ),
       chi2Coeff = cms.vdouble( 0.9, 1.8 )
     ),
-    minYsizeB1 = cms.int32( 1 ),
-    minYsizeB2 = cms.int32( 1 ),
-    phiCuts = cms.vint32( 965, 1241, 395, 698, 1058, 1211, 348, 782, 1016, 810, 463, 755, 694, 531, 770, 471, 592, 750, 348 ),
+    minYsizeB1 = cms.int32( 1 ),🔵
+    minYsizeB2 = cms.int32( 1 ),🔵
+    phiCuts = cms.vint32( 965, 1241, 395, 698, 1058, 1211, 348, 782, 1016, 810, 463, 755, 694, 531, 770, 471, 592, 750, 348 ),🔵
     alpaka = cms.untracked.PSet(  backend = cms.untracked.string( "" ) )
 )
 ```
 
-###### 4.2.2 hltPixelTracks ✅ 
+### 4.2.2 hltPixelTracks ✅ 
 ```python
 fragment.hltPixelTracks = cms.EDProducer( "PixelTrackProducerFromSoAAlpakaPhase1",
     beamSpot = cms.InputTag( "hltOnlineBeamSpot" ),
@@ -337,7 +336,7 @@ fragment.hltPixelTracks = cms.EDProducer( "PixelTrackProducerFromSoAAlpakaPhase1
 )
 ```
 
-##### 4.3 HLTRecopixelvertexingSequence
+## 4.3 HLTRecopixelvertexingSequence
 ```python
 fragment.HLTRecopixelvertexingSequence = cms.Sequence(
     4.3.1 fragment.HLTRecoPixelTracksSequence +
@@ -346,14 +345,14 @@ fragment.HLTRecopixelvertexingSequence = cms.Sequence(
     4.3.4 fragment.hltTrimmedPixelVertices )
 ```
 
-###### 4.3.1 HLTRecoPixelTracksSequence
+### 4.3.1 HLTRecoPixelTracksSequence
 ```python
 fragment.HLTRecoPixelTracksSequence = cms.Sequence(
     4.3.1.1 fragment.hltPixelTracksSoA + 
     4.3.1.2 fragment.hltPixelTracks )
 ```
 
-####### 4.3.1.1 hltPixelTracksSoA
+#### 4.3.1.1 hltPixelTracksSoA
 ```python
 fragment.hltPixelTracksSoA = cms.EDProducer( "CAHitNtupletAlpakaPhase1@alpaka",
     pixelRecHitSrc = cms.InputTag( "hltSiPixelRecHitsSoA" ),
@@ -400,7 +399,7 @@ fragment.hltPixelTracksSoA = cms.EDProducer( "CAHitNtupletAlpakaPhase1@alpaka",
 )
 ```
 
-####### 4.3.1.2 hltPixelTracks ✅ 
+#### 4.3.1.2 hltPixelTracks ✅ 
  ```python
 fragment.hltPixelTracks = cms.EDProducer( "PixelTrackProducerFromSoAAlpakaPhase1",
     beamSpot = cms.InputTag( "hltOnlineBeamSpot" ),
@@ -411,7 +410,7 @@ fragment.hltPixelTracks = cms.EDProducer( "PixelTrackProducerFromSoAAlpakaPhase1
 )
 ```
 
-###### 4.3.2 hltPixelVerticesSoA 🔵
+### 4.3.2 hltPixelVerticesSoA 🔵
 ```python
 fragment.hltPixelVerticesSoA = cms.EDProducer( "PixelVertexProducerAlpakaPhase1@alpaka",
     oneKernel = cms.bool( True ),
@@ -423,7 +422,7 @@ fragment.hltPixelVerticesSoA = cms.EDProducer( "PixelVertexProducerAlpakaPhase1@
     eps = cms.double( 0.07 ),
     errmax = cms.double( 0.01 ),
     chi2max = cms.double( 9.0 ),
-    maxVertices = cms.int32( 256 ),
+    maxVertices = cms.int32( 256 ),🔵
     PtMin = cms.double( 0.5 ),
     PtMax = cms.double( 75.0 ),
     pixelTrackSrc = cms.InputTag( "hltPixelTracksSoA" ),
@@ -431,7 +430,7 @@ fragment.hltPixelVerticesSoA = cms.EDProducer( "PixelVertexProducerAlpakaPhase1@
 )
 ```
 
-###### 4.3.3 hltPixelVertices ✅   
+### 4.3.3 hltPixelVertices ✅   
 ```python 
 fragment.hltPixelVertices = cms.EDProducer( "PixelVertexProducerFromSoAAlpaka",
     TrackCollection = cms.InputTag( "hltPixelTracks" ),
@@ -440,7 +439,7 @@ fragment.hltPixelVertices = cms.EDProducer( "PixelVertexProducerFromSoAAlpaka",
 )
 ```
 
-###### 4.3.4 hltTrimmedPixelVertices ✅  
+### 4.3.4 hltTrimmedPixelVertices ✅  
 ```python 
 fragment.hltTrimmedPixelVertices = cms.EDProducer( "PixelVertexCollectionTrimmer",
     src = cms.InputTag( "hltPixelVertices" ),
@@ -451,7 +450,7 @@ fragment.hltTrimmedPixelVertices = cms.EDProducer( "PixelVertexCollectionTrimmer
 )
 ```
 
-##### 4.4 HLTDoCaloSequence
+## 4.4 HLTDoCaloSequence
 ```python
 fragment.HLTDoCaloSequence = cms.Sequence(
     4.4.1 fragment.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence + 
@@ -459,7 +458,7 @@ fragment.HLTDoCaloSequence = cms.Sequence(
     4.4.3 fragment.hltTowerMakerForAll )
 ```
 
-###### 4.4.1 HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence
+### 4.4.1 HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence
 ```python
 fragment.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence = cms.Sequence(
     4.4.1.1 fragment.hltEcalDigisLegacy +
@@ -471,7 +470,7 @@ fragment.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence = cms.Sequence(
     4.4.1.7 fragment.hltEcalRecHit )
 ```
 
-  ####### 4.4.1.1 hltEcalDigisLegacy ✅   
+  #### 4.4.1.1 hltEcalDigisLegacy ✅   
   ```python
   fragment.hltEcalDigisLegacy = cms.EDProducer( "EcalRawToDigi",
       tccUnpacking = cms.bool( True ),
@@ -495,7 +494,7 @@ fragment.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence = cms.Sequence(
   )
   ```
 
-  ####### 4.4.1.2 hltEcalDigisSoA ✅   
+  #### 4.4.1.2 hltEcalDigisSoA ✅   
   ```python
   fragment.hltEcalDigisSoA = cms.EDProducer( "EcalRawToDigiPortable@alpaka",
       InputLabel = cms.InputTag( "rawDataCollector" ),
@@ -508,7 +507,7 @@ fragment.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence = cms.Sequence(
   )
   ```
 
-  ####### 4.4.1.3 hltEcalDigis ✅   
+  #### 4.4.1.3 hltEcalDigis ✅   
   ```python
   fragment.hltEcalDigis = cms.EDProducer( "EcalDigisFromPortableProducer",
       digisInLabelEB = cms.InputTag( 'hltEcalDigisSoA','ebDigis' ),
@@ -519,7 +518,7 @@ fragment.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence = cms.Sequence(
   )
   ```
 
-  ####### 4.4.1.4 hltEcalUncalibRecHitSoA 🔵
+  #### 4.4.1.4 hltEcalUncalibRecHitSoA 🔵
   ```python
   fragment.hltEcalUncalibRecHitSoA = cms.EDProducer( "EcalUncalibRecHitProducerPortable@alpaka",
     digisLabelEB = cms.InputTag( 'hltEcalDigisSoA','ebDigis' ),
@@ -554,18 +553,18 @@ fragment.HLTDoFullUnpackingEgammaEcalWithoutPreshowerSequence = cms.Sequence(
 )
   ```
 
-  ####### 4.4.1.5 hltEcalUncalibRecHit
+  #### 4.4.1.5 hltEcalUncalibRecHit
   ```python
   fragment.hltEcalUncalibRecHit = cms.EDProducer( "EcalUncalibRecHitSoAToLegacy",
-    inputCollectionEB = cms.InputTag( 'hltEcalUncalibRecHitSoA','EcalUncalibRecHitsEB' ),
-    outputLabelEB = cms.string( "EcalUncalibRecHitsEB" ),
-    isPhase2 = cms.bool( False ),
-    inputCollectionEE = cms.InputTag( 'hltEcalUncalibRecHitSoA','EcalUncalibRecHitsEE' ),
-    outputLabelEE = cms.string( "EcalUncalibRecHitsEE" )
+    inputCollectionEB = cms.InputTag( 'hltEcalUncalibRecHitSoA','EcalUncalibRecHitsEB' ),🔵
+    outputLabelEB = cms.string( "EcalUncalibRecHitsEB" ),🔵
+    isPhase2 = cms.bool( False ),🔵
+    inputCollectionEE = cms.InputTag( 'hltEcalUncalibRecHitSoA','EcalUncalibRecHitsEE' ),🔵
+    outputLabelEE = cms.string( "EcalUncalibRecHitsEE" )🔵
 )
   ```
 
-  ####### 4.4.1.6 hltEcalDetIdToBeRecovered
+  #### 4.4.1.6 hltEcalDetIdToBeRecovered🔵
   ```python
 fragment.hltEcalDetIdToBeRecovered = cms.EDProducer( "EcalDetIdToBeRecoveredProducer",
     ebSrFlagCollection = cms.InputTag( "hltEcalDigisLegacy" ),
@@ -585,7 +584,7 @@ fragment.hltEcalDetIdToBeRecovered = cms.EDProducer( "EcalDetIdToBeRecoveredProd
 )
   ```
 
-  ####### 4.4.1.7 hltEcalRecHit
+  #### 4.4.1.7 hltEcalRecHit🔵
   ```python
 fragment.hltEcalRecHit = cms.EDProducer( "EcalRecHitProducer",
     EErechitCollection = cms.string( "EcalRecHitsEE" ),
@@ -658,7 +657,7 @@ fragment.hltEcalRecHit = cms.EDProducer( "EcalRecHitProducer",
 )
   ```
 
-###### 4.4.2 HLTDoLocalHcalSequence
+### 4.4.2 HLTDoLocalHcalSequence
 ```python
 fragment.HLTDoLocalHcalSequence = cms.Sequence(
     4.4.2.1 fragment.hltHcalDigis +
@@ -670,7 +669,7 @@ fragment.HLTDoLocalHcalSequence = cms.Sequence(
     4.4.2.7 fragment.hltHoreco )
 ```
 
-  ####### 4.4.2.1 hltHcalDigis
+  #### 4.4.2.1 hltHcalDigis✅ 
   ```python
 fragment.hltHcalDigis = cms.EDProducer( "HcalRawToDigi",
     HcalFirstFED = cms.untracked.int32( 700 ),
@@ -695,7 +694,7 @@ fragment.hltHcalDigis = cms.EDProducer( "HcalRawToDigi",
 )
   ```
 
-  ####### 4.4.2.2 hltHcalDigisSoA
+  #### 4.4.2.2 hltHcalDigisSoA✅ 
   ```python
 fragment.hltHcalDigisSoA = cms.EDProducer( "HcalDigisSoAProducer@alpaka",
     hbheDigisLabel = cms.InputTag( "hltHcalDigis" ),
@@ -710,9 +709,9 @@ fragment.hltHcalDigisSoA = cms.EDProducer( "HcalDigisSoAProducer@alpaka",
 )
   ```
 
-  ####### 4.4.2.3 hltHbheRecoSoA
+  #### 4.4.2.3 hltHbheRecoSoA🔵
   ```python
-fragment.hltHbheRecoSoA = cms.EDProducer( "HBHERecHitProducerPortable@alpaka",
+fragment.hltHbheRecoSoA = cms.EDProducer( "HBHERecHitProducerPortable@alpaka",🔵
     maxTimeSamples = cms.uint32( 10 ),
     kprep1dChannelsPerBlock = cms.uint32( 32 ),
     digisLabelF01HE = cms.InputTag( 'hltHcalDigisSoA','f01HEDigis' ),
@@ -732,19 +731,19 @@ fragment.hltHbheRecoSoA = cms.EDProducer( "HBHERecHitProducerPortable@alpaka",
     slopeTimeSlewParameters = cms.vdouble( -3.178648, -1.5610227, -1.075824 ),
     tmaxTimeSlewParameters = cms.vdouble( 16.0, 10.0, 6.25 ),
     kernelMinimizeThreads = cms.vuint32( 16, 1, 1 ),
-    pulseOffsets = cms.vint32( -3, -2, -1, 0, 1, 2, 3, 4 ),
+    pulseOffsets = cms.vint32( -3, -2, -1, 0, 1, 2, 3, 4 ),🔵
     alpaka = cms.untracked.PSet(  backend = cms.untracked.string( "" ) )
 )
   ```
 
-  ####### 4.4.2.4 hltHbhereco
+  #### 4.4.2.4 hltHbhereco✅ 
   ```python
 fragment.hltHbhereco = cms.EDProducer( "HcalRecHitSoAToLegacy",
     src = cms.InputTag( "hltHbheRecoSoA" )
 )
   ```
 
-  ####### 4.4.2.5 hltHfprereco
+  #### 4.4.2.5 hltHfprereco 🔵
   ```python
 fragment.hltHfprereco = cms.EDProducer( "HFPreReconstructor",
     digiLabel = cms.InputTag( "hltHcalDigis" ),
@@ -756,11 +755,11 @@ fragment.hltHfprereco = cms.EDProducer( "HFPreReconstructor",
 )
   ```
 
-  ####### 4.4.2.6 hltHfreco
+  #### 4.4.2.6 hltHfreco🔵
   ```python
 fragment.hltHfreco = cms.EDProducer( "HFPhase1Reconstructor",
     inputLabel = cms.InputTag( "hltHfprereco" ),
-    algoConfigClass = cms.string( "HFPhase1PMTParams" ),
+    algoConfigClass = cms.string( "HFPhase1PMTParams" ),🔵
     useChannelQualityFromDB = cms.bool( False ),
     checkChannelQualityForDepth3and4 = cms.bool( False ),
     algorithm = cms.PSet( 
@@ -820,44 +819,44 @@ fragment.hltHfreco = cms.EDProducer( "HFPhase1Reconstructor",
 )
   ```
 
-  ####### 4.4.2.7 hltHoreco
+  #### 4.4.2.7 hltHoreco🔵
   ```python
 fragment.hltHoreco = cms.EDProducer( "HcalHitReconstructor",
-    correctForTimeslew = cms.bool( True ),
+    correctForTimeslew = cms.bool( True ),🔵
     correctForPhaseContainment = cms.bool( True ),
     correctionPhaseNS = cms.double( 13.0 ),
     digiLabel = cms.InputTag( "hltHcalDigis" ),
-    correctTiming = cms.bool( False ),
+    correctTiming = cms.bool( False ),🔵
     dropZSmarkedPassed = cms.bool( True ),
-    firstAuxTS = cms.int32( 4 ),
+    firstAuxTS = cms.int32( 4 ),🔵
     firstSample = cms.int32( 4 ),
     samplesToAdd = cms.int32( 4 ),
     tsFromDB = cms.bool( True ),
     useLeakCorrection = cms.bool( False ),
-    recoParamsFromDB = cms.bool( True ),
-    setNegativeFlags = cms.bool( False ),
-    saturationParameters = cms.PSet(  maxADCvalue = cms.int32( 127 ) ),
+    recoParamsFromDB = cms.bool( True ),🔵
+    setNegativeFlags = cms.bool( False ),🔵
+    saturationParameters = cms.PSet(  maxADCvalue = cms.int32( 127 ) ),🔵
     setSaturationFlags = cms.bool( False ),
-    Subdetector = cms.string( "HO" ),
-    digiTimeFromDB = cms.bool( True ),
-    hfTimingTrustParameters = cms.PSet(  ),
+    Subdetector = cms.string( "HO" ),🔵
+    digiTimeFromDB = cms.bool( True ),🔵
+    hfTimingTrustParameters = cms.PSet(  ),🔵
     setTimingTrustFlags = cms.bool( False ),
-    setNoiseFlags = cms.bool( False ),
+    setNoiseFlags = cms.bool( False ),🔵
     digistat = cms.PSet(  ),
     HFInWindowStat = cms.PSet(  ),
     S9S1stat = cms.PSet(  ),
     S8S1stat = cms.PSet(  ),
     PETstat = cms.PSet(  ),
-    dataOOTCorrectionName = cms.string( "" ),
-    dataOOTCorrectionCategory = cms.string( "Data" ),
-    mcOOTCorrectionName = cms.string( "" ),
-    mcOOTCorrectionCategory = cms.string( "MC" )
+    dataOOTCorrectionName = cms.string( "" ),🔵
+    dataOOTCorrectionCategory = cms.string( "Data" ),🔵
+    mcOOTCorrectionName = cms.string( "" ),🔵
+    mcOOTCorrectionCategory = cms.string( "MC" )🔵
 )
   ```
 --- 
 upper this line , git change does not mean there is a change between phase 1,2 
 
-###### 4.4.3 hltTowerMakerForAll
+### 4.4.3 hltTowerMakerForAll🔵
 ```python
 fragment.hltTowerMakerForAll = cms.EDProducer( "CaloTowersCreator",
     EBSumThreshold = cms.double( 0.2 ),
@@ -933,11 +932,11 @@ fragment.hltTowerMakerForAll = cms.EDProducer( "CaloTowersCreator",
     AllowMissingInputs = cms.bool( False ),
     HcalPhase = cms.int32( 1 ),
     usePFThresholdsFromDB = cms.bool( True ),
-    EcalRecHitThresh = cms.bool( True )
+    EcalRecHitThresh = cms.bool( True )🔵
 )
 ```
 
-##### 4.5 hltL1sDoubleTauBigOR
+## 4.5 hltL1sDoubleTauBigOR✅  
 ```python
 fragment.hltL1sDoubleTauBigOR = cms.EDFilter( "HLTL1TSeed",
     saveTags = cms.bool( True ),
@@ -954,7 +953,7 @@ fragment.hltL1sDoubleTauBigOR = cms.EDFilter( "HLTL1TSeed",
 )
 ```
 
-##### 4.6 hltL1sSingleTau
+## 4.6 hltL1sSingleTau✅  
 ```python
 fragment.hltL1sSingleTau = cms.EDFilter( "HLTL1TSeed",
     saveTags = cms.bool( True ),
@@ -971,7 +970,7 @@ fragment.hltL1sSingleTau = cms.EDFilter( "HLTL1TSeed",
 )
 ```
 
-##### 4.7 hltL1sBigOrMuXXerIsoTauYYer
+## 4.7 hltL1sBigOrMuXXerIsoTauYYer✅  
 ```python
 fragment.hltL1sBigOrMuXXerIsoTauYYer = cms.EDFilter( "HLTL1TSeed",
     saveTags = cms.bool( True ),
@@ -988,7 +987,7 @@ fragment.hltL1sBigOrMuXXerIsoTauYYer = cms.EDFilter( "HLTL1TSeed",
 )
 ```
 
-##### 4.8 hltL1sMu22erIsoTau40er
+## 4.8 hltL1sMu22erIsoTau40er✅  
 ```python
 fragment.hltL1sMu22erIsoTau40er = cms.EDFilter( "HLTL1TSeed",
     saveTags = cms.bool( True ),
@@ -1005,11 +1004,11 @@ fragment.hltL1sMu22erIsoTau40er = cms.EDFilter( "HLTL1TSeed",
 )
 ```
 
-##### 4.9 hltL1sBigORDoubleTauJet
+## 4.9 hltL1sBigORDoubleTauJet🔵
 ```python
 fragment.hltL1sBigORDoubleTauJet = cms.EDFilter( "HLTL1TSeed",
     saveTags = cms.bool( True ),
-    L1SeedsLogicalExpression = cms.string( "L1_DoubleTau_Iso34_Iso23_er2p1_Jet55_RmOvlp_dR0p5 OR L1_DoubleTau_Iso34_Iso26_er2p1_Jet55_RmOvlp_dR0p5 OR L1_DoubleTau_Iso34_Iso23_er2p1_Jet70_RmOvlp_dR0p5 OR L1_DoubleTau_Iso34_Iso26_er2p1_Jet70_RmOvlp_dR0p5" ),
+    L1SeedsLogicalExpression = cms.string( "L1_DoubleTau_Iso34_Iso23_er2p1_Jet55_RmOvlp_dR0p5 OR L1_DoubleTau_Iso34_Iso26_er2p1_Jet55_RmOvlp_dR0p5 OR L1_DoubleTau_Iso34_Iso23_er2p1_Jet70_RmOvlp_dR0p5 OR L1_DoubleTau_Iso34_Iso26_er2p1_Jet70_RmOvlp_dR0p5" ),🔵
     L1ObjectMapInputTag = cms.InputTag( "hltGtStage2ObjectMap" ),
     L1GlobalInputTag = cms.InputTag( "hltGtStage2Digis" ),
     L1MuonInputTag = cms.InputTag( 'hltGtStage2Digis','Muon' ),
@@ -1022,11 +1021,11 @@ fragment.hltL1sBigORDoubleTauJet = cms.EDFilter( "HLTL1TSeed",
 )
 ```
 
-##### 4.10 hltL1VBFDiJetIsoTau
+## 4.10 hltL1VBFDiJetIsoTau🔵
 ```python
 fragment.hltL1VBFDiJetIsoTau = cms.EDFilter( "HLTL1TSeed",
     saveTags = cms.bool( True ),
-    L1SeedsLogicalExpression = cms.string( "L1_DoubleJet45_Mass_Min550_IsoTau45er2p1_RmOvlp_dR0p5 OR L1_DoubleJet45_Mass_Min600_IsoTau45er2p1_RmOvlp_dR0p5 OR L1_DoubleJet45_Mass_Min700_IsoTau45er2p1_RmOvlp_dR0p5 OR L1_DoubleJet45_Mass_Min800_IsoTau45er2p1_RmOvlp_dR0p5" ),
+    L1SeedsLogicalExpression = cms.string( "L1_DoubleJet45_Mass_Min550_IsoTau45er2p1_RmOvlp_dR0p5 OR L1_DoubleJet45_Mass_Min600_IsoTau45er2p1_RmOvlp_dR0p5 OR L1_DoubleJet45_Mass_Min700_IsoTau45er2p1_RmOvlp_dR0p5 OR L1_DoubleJet45_Mass_Min800_IsoTau45er2p1_RmOvlp_dR0p5" ),🔵
     L1ObjectMapInputTag = cms.InputTag( "hltGtStage2ObjectMap" ),
     L1GlobalInputTag = cms.InputTag( "hltGtStage2Digis" ),
     L1MuonInputTag = cms.InputTag( 'hltGtStage2Digis','Muon' ),
@@ -1039,7 +1038,7 @@ fragment.hltL1VBFDiJetIsoTau = cms.EDFilter( "HLTL1TSeed",
 )
 ```
 
-##### 4.11 hltL1sVeryBigORMu18erTauXXer2p1
+## 4.11 hltL1sVeryBigORMu18erTauXXer2p1✅  
 ```python
 fragment.hltL1sVeryBigORMu18erTauXXer2p1 = cms.EDFilter( "HLTL1TSeed",
     saveTags = cms.bool( True ),
@@ -1056,7 +1055,7 @@ fragment.hltL1sVeryBigORMu18erTauXXer2p1 = cms.EDFilter( "HLTL1TSeed",
 )
 ```
 
-##### ~~ 4.12 hltL1sDoubleTauBigORWithLowMass ~~  🟨 
+## ~~ 4.12 hltL1sDoubleTauBigORWithLowMass ~~  🟨 
 ```python
 fragment.hltL1sDoubleTauBigORWithLowMass = cms.EDFilter( "HLTL1TSeed",
     saveTags = cms.bool( True ),
@@ -1072,7 +1071,7 @@ fragment.hltL1sDoubleTauBigORWithLowMass = cms.EDFilter( "HLTL1TSeed",
     L1EtSumZdcInputTag = cms.InputTag( 'hltGtStage2Digis','EtSumZDC' )
 ) 
 ```
-##### 4.12 hltL1sDoubleTauBigOR  🔵
+## 4.12 hltL1sDoubleTauBigOR  🔵
 ```python 
 fragment.hltL1sDoubleTauBigOR = cms.EDFilter( "HLTL1TSeed",
     saveTags = cms.bool( True ),
@@ -1089,7 +1088,7 @@ fragment.hltL1sDoubleTauBigOR = cms.EDFilter( "HLTL1TSeed",
 )
 ```
 
-##### 4.13 hltL2TauTagNNProducer
+## 4.13 hltL2TauTagNNProducer🔵
 ```python
 fragment.hltL2TauTagNNProducer = cms.EDProducer( "L2TauNNProducerAlpaka",
     debugLevel = cms.int32( 0 ),
@@ -1115,8 +1114,8 @@ fragment.hltL2TauTagNNProducer = cms.EDProducer( "L2TauNNProducerAlpaka",
       cms.PSet(  L1TauTrigger = cms.InputTag( "hltL1sVeryBigORMu18erTauXXer2p1" ),
         L1CollectionName = cms.string( "Mu18TauXX" )
       ),
-      cms.PSet(  L1TauTrigger = cms.InputTag( "hltL1sTauVeryBigOR" ),
-        L1CollectionName = cms.string( "TauVeryBigOR" )
+      cms.PSet(  L1TauTrigger = cms.InputTag( "hltL1sTauVeryBigOR" ),🔵
+        L1CollectionName = cms.string( "TauVeryBigOR" )🔵
       )
     ),
     hbheInput = cms.InputTag( "hltHbhereco" ),
