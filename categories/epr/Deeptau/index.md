@@ -1050,6 +1050,7 @@ fragment.hltL2TauTagNNProducer = cms.EDProducer( "L2TauNNProducerAlpaka",
 )
 ```
 
+
 #### 5. hltL2SingleTauTagNNFilter
 ```python
 fragment.hltL2SingleTauTagNNFilter = cms.EDFilter( "L2TauTagFilter",
