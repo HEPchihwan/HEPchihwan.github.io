@@ -9220,7 +9220,7 @@ fragment.hltHpsPFTauDeepTauProducer = cms.EDProducer( "DeepTauId",
 )
 ```
 
-# 7.2❌ ~~hltHpsSelectedPFTausLooseSingleTauWPDeepTau~~
+## 7.2❌ ~~hltHpsSelectedPFTausLooseSingleTauWPDeepTau~~
 ```python
 fragment.hltHpsSelectedPFTausLooseSingleTauWPDeepTau = cms.EDFilter( "PFTauSelector",
     src = cms.InputTag( "hltHpsL1JetsHLTForDeepTauInput" ),
@@ -9237,7 +9237,7 @@ fragment.hltHpsSelectedPFTausLooseSingleTauWPDeepTau = cms.EDFilter( "PFTauSelec
 )
 ```
 
-# 7.2 
+## 7.2 
 hltSelectedPFTausTrackFinding or
 hltSelectedPFTausTrackFindingMediumChargedIsolation or
 hltHpsSelectedPFTausTrackFindingDispl or
