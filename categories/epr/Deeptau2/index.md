@@ -20,6 +20,48 @@ subheading: "phase2 upg"
 
 🟨  : Things deleted in phase 2 .
 
+---
+
+# sequence modified 
+
+```python
+- 4.
+1 fragment.HLTL2TauTagNNSequence = cms.Sequence( fragment.HLTDoLocalPixelSequence + fragment.HLTRecoPixelTracksSequence + fragment.HLTRecopixelvertexingSequence + fragment.HLTDoCaloSequence + cms.ignore(fragment.hltL1sDoubleTauBigOR) + cms.ignore(fragment.hltL1sSingleTau) + cms.ignore(fragment.hltL1sBigOrMuXXerIsoTauYYer) + cms.ignore(fragment.hltL1sMu22erIsoTau40er) + cms.ignore(fragment.hltL1sBigORDoubleTauJet) + cms.ignore(fragment.hltL1VBFDiJetIsoTau) + cms.ignore(fragment.hltL1sVeryBigORMu18erTauXXer2p1) + 🔵cms.ignore(fragment.hltL1sDoubleTauBigORWithLowMass) + fragment.hltL2TauTagNNProducer )
+2*fragment.HLTL2TauTagNNSequence = cms.Sequence( fragment.HLTDoLocalPixelSequence + fragment.HLTRecoPixelTracksSequence + fragment.HLTRecopixelvertexingSequence + fragment.HLTDoCaloSequence + cms.ignore(fragment.hltL1sDoubleTauBigOR) + cms.ignore(fragment.hltL1sSingleTau) + cms.ignore(fragment.hltL1sBigOrMuXXerIsoTauYYer) + cms.ignore(fragment.hltL1sMu22erIsoTau40er) + cms.ignore(fragment.hltL1sBigORDoubleTauJet) + cms.ignore(fragment.hltL1VBFDiJetIsoTau) + cms.ignore(fragment.hltL1sVeryBigORMu18erTauXXer2p1) + 🔵cms.ignore(fragment.hltL1sTauVeryBigOR) + fragment.hltL2TauTagNNProducer )
+
+---
+
+- 6.
+
+1 fragment.HLTGlobalPFTauHPSSequence = cms.Sequence( fragment.hltStripTrackerHVOn + fragment.hltPixelTrackerHVOn + fragment.HLTGlobalPFTriggerSequenceForTau + fragment.HLTPFTauHPS )
+2*
+1 fragment.HLTLooseSingleTauWPDeepTauPFTau = cms.Sequence( fragment.HLTHPSDeepTauPFTauSequence + fragment.hltHpsSelectedPFTausLooseSingleTauWPDeepTau )
+2*
+
+---
+
+- 6.4
+
+1 fragment.HLTPFTauHPS = cms.Sequence( fragment.hltTauPFJets08Region + fragment.hltHpsTauPFJetsRecoTauChargedHadronsWithNeutrals + fragment.hltPFTauPiZeros + fragment.hltHpsCombinatoricRecoTaus + fragment.hltHpsSelectionDiscriminator + fragment.hltHpsPFTauProducerSansRefs + fragment.hltHpsPFTauProducer + fragment.hltHpsPFTauDiscriminationByDecayModeFindingNewDMs + fragment.hltHpsPFTauTrackFindingDiscriminator + fragment.hltHpsSelectedPFTausTrackFinding + fragment.hltHpsPFTauTrack )
+2*fragment.HLTPFTauHPS🔵Displ = cms.Sequence( fragment.hltTauPFJets08RegionDispl + fragment.hltHpsTauPFJetsRecoTauChargedHadronsWithNeutralsDispl + fragment.hltPFTauPiZerosDispl + fragment.hltHpsCombinatoricRecoTausDispl + fragment.hltHpsSelectionDiscriminatorDispl + fragment.hltHpsPFTauProducerSansRefsDispl + fragment.hltHpsPFTauProducerDispl + fragment.hltHpsPFTauDiscriminationByDecayModeFindingNewDMsDispl + fragment.hltHpsPFTauTrackFindingDiscriminatorDispl + fragment.hltHpsSelectedPFTausTrackFindingDispl + fragment.hltHpsPFTauTrackDispl )
+
+---
+
+- 6.3.5.4.1
+
+1 fragment.HLTIterativeTrackingIteration0 = cms.Sequence( fragment.hltIter0PFLowPixelSeedsFromPixelTracks + fragment.hltIter0PFlowCkfTrackCandidates + fragment.hltIter0PFlowCtfWithMaterialTracks + fragment.hltIter0PFlowTrackCutClassifier + fragment.hltIter0PFlowTrackSelectionHighPurity )
+2 *fragment.HLTIterativeTrackingIteration0 = cms.Sequence( fragment.hltIter0PFLowPixelSeedsFromPixelTracks + 🔵fragment.hltIter0PFlowCkfTrackCandidatesMkFitSiPixelHits + 🔵fragment.hltSiStripRecHits + 🔵fragment.hltIter0PFlowCkfTrackCandidatesMkFitSiStripHits + 🔵fragment.hltIter0PFlowCkfTrackCandidatesMkFitEventOfHits + 🔵fragment.hltIter0PFlowCkfTrackCandidatesMkFitSeeds + 🔵fragment.hltIter0PFlowCkfTrackCandidatesMkFit + fragment.hltIter0PFlowCkfTrackCandidates + fragment.hltIter0PFlowCtfWithMaterialTracks + fragment.hltIter0PFlowTrackCutClassifier + fragment.hltIter0PFlowTrackSelectionHighPurity )
+
+---
+
+- 7.1
+
+1 fragment.HLTHPSDeepTauPFTauSequence = cms.Sequence( cms.ignore(fragment.hltL1sTauVeryBigOR) + fragment.hltHpsL1JetsHLTForDeepTauInput + fragment.hltHpsPFTauDiscriminationByDecayModeFindingNewDMsL1matched + fragment.hltHpsPFTauPrimaryVertexProducerForDeepTau + fragment.hltHpsPFTauSecondaryVertexProducerForDeepTau + fragment.hltHpsPFTauTransverseImpactParametersForDeepTau + fragment.hltFixedGridRhoProducerFastjetAllTau + fragment.hltHpsPFTauBasicDiscriminatorsForDeepTau + fragment.hltHpsPFTauBasicDiscriminatorsdR03ForDeepTau + fragment.hltHpsPFTauDeepTauProducer )
+2 x
+```
+
+---
+
 
 # Definition from phase 1 
 ```python
