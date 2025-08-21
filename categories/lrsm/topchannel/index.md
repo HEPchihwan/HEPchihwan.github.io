@@ -926,9 +926,56 @@ float LRSM_TBChannel::CalculateWRMass(const RVec<Muon>& muons, const RVec<Jet>& 
 
 ### 3.2 CR setting
 #### 3.2.1 introduce
-main background is ttbar . variable can be set with m(lljJ)
-For low mass , ttbar  and High mass , OF ttbar could be good.
-top jet number should be one? + t and b jet delta r --> check which is main bkg
+
+* Ideas 
+- Main background is ttbar . variable can be set with m(lljJ)
+- For low mass , ttbar  and High mass , OF ttbar could be good.
+- Top jet number should be one? + t and b jet delta r --> check which is main bkg
+
+---
+
+For first step to set CR , we need to set cuts as minima , see the background & guess which background to use SF.
+Also it is needed to check getting narrower cut , using physics interpretation to cut off which background to get rid of . 
+
+---
+
+Minima Selection Cut : < Using recommendation >
+
+- HLT                        : HLT_Mu50 or HLT_CascadeMu100 or HLT_HighPtTkMu100
+
+- Lepton safe cut pt         : 52
+- Lead/sublead Muon pt /eta  : 50 /2.5
+
+- BJet tagging               : PartNet Tight 
+- BJet pt / eta              : 30 / 2.5
+
+- Top  tagging               : PartNet 0.9
+- Top SDM                    : 120 - 250
+- Top pt / eta               : 30 / 2.5
+
+- Dilepton mass              : 50
+
+---
+
+[2022 ERA](2022 B . C . D . Single Muon)
+
+1. WRMass
+![WRMass_CR_2022.png](categories/lrsm/topchannel/CR/2022/WRMass_CR_2022.png)
+2. Leading Muon pt
+![LeadingMuonPt_CR_2022.png](categories/lrsm/topchannel/CR/2022/LeadingMuonPt_CR_2022.png)
+3. B Jet pt
+![LeadingBJetPt_CR_2022.png](categories/lrsm/topchannel/CR/2022/LeadingBJetPt_CR_2022.png)
+4. Top Jet pt
+![LeadingTopJetPt_CR_2022.png](categories/lrsm/topchannel/CR/2022/LeadingTopJetPt_CR_2022.png)
+5. Dilepton mass
+![DileptonMass_CR_2022.png](categories/lrsm/topchannel/CR/2022/DileptonMass_CR_2022.png)
+6. Topjet num
+![Topjetnum_CR_2022.png](categories/lrsm/topchannel/CR/2022/Topjetnum_CR_2022.png)
+7. Subleading Muon pt
+![SubleadingMuonPt_CR_2022.png](categories/lrsm/topchannel/CR/2022/SubleadingMuonPt_CR_2022.png)
+
+
+[2022EE ERA](2022 E . F . G. Muon )
 
 
 ---
