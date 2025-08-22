@@ -960,23 +960,35 @@ Minima Selection Cut : < Using recommendation >
 [2022 ERA](2022 B . C . D . Single Muon)
 
 1. WRMass
-![WRMass_CR_2022.png](categories/lrsm/topchannel/CR/2022/WRMass_CR_2022.png)
+![WRMass_CR_2022.png](/categories/lrsm/topchannel/CR/2022/WRMass_CR_2022.png)
 2. Leading Muon pt
-![LeadingMuonPt_CR_2022.png](categories/lrsm/topchannel/CR/2022/LeadingMuonPt_CR_2022.png)
+![LeadingMuonPt_CR_2022.png](/categories/lrsm/topchannel/CR/2022/LeadingMuonPt_CR_2022.png)
 3. B Jet pt
-![LeadingBJetPt_CR_2022.png](categories/lrsm/topchannel/CR/2022/LeadingBJetPt_CR_2022.png)
+![LeadingBJetPt_CR_2022.png](/categories/lrsm/topchannel/CR/2022/LeadingBJetPt_CR_2022.png)
 4. Top Jet pt
-![LeadingTopJetPt_CR_2022.png](categories/lrsm/topchannel/CR/2022/LeadingTopJetPt_CR_2022.png)
+![LeadingTopJetPt_CR_2022.png](/categories/lrsm/topchannel/CR/2022/LeadingTopJetPt_CR_2022.png)
 5. Dilepton mass
-![DileptonMass_CR_2022.png](categories/lrsm/topchannel/CR/2022/DileptonMass_CR_2022.png)
+![DileptonMass_CR_2022.png](/categories/lrsm/topchannel/CR/2022/DileptonMass_CR_2022.png)
 6. Topjet num
-![Topjetnum_CR_2022.png](categories/lrsm/topchannel/CR/2022/Topjetnum_CR_2022.png)
+![Topjetnum_CR_2022.png](/categories/lrsm/topchannel/CR/2022/Topjetnum_CR_2022.png)
 7. Subleading Muon pt
-![SubleadingMuonPt_CR_2022.png](categories/lrsm/topchannel/CR/2022/SubleadingMuonPt_CR_2022.png)
-
+![SubleadingMuonPt_CR_2022.png](/categories/lrsm/topchannel/CR/2022/SubleadingMuonPt_CR_2022.png)
 
 [2022EE ERA](2022 E . F . G. Muon )
-
+f
+![WRMass_CR_2022EE.png](/categories/lrsm/topchannel/CR/2022EE/WRMass_CR_2022EE.png)
+2. Leading Muon pt
+![LeadingMuonPt_CR_2022EE.png](/categories/lrsm/topchannel/CR/2022EE/LeadingMuonPt_CR_2022EE.png)
+3. B Jet pt
+![LeadingBJetPt_CR_2022EE.png](/categories/lrsm/topchannel/CR/2022EE/LeadingBJetPt_CR_2022EE.png)
+4. Top Jet pt
+![LeadingTopJetPt_CR_2022EE.png](/categories/lrsm/topchannel/CR/2022EE/LeadingTopJetPt_CR_2022EE.png)
+5. Dilepton mass
+![DileptonMass_CR_2022EE.png](/categories/lrsm/topchannel/CR/2022EE/DileptonMass_CR_2022EE.png)
+6. Topjet num
+![Topjetnum_CR_2022EE.png](/categories/lrsm/topchannel/CR/2022EE/Topjetnum_CR_2022EE.png)
+7. Subleading Muon pt
+![SubleadingMuonPt_CR_2022EE.png](/categories/lrsm/topchannel/CR/2022EE/SubleadingMuonPt_CR_2022EE.png)
 
 ---
 ## Summary and Conclusions
